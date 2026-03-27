@@ -895,7 +895,7 @@ body.now-dragging, body.now-dragging * { cursor: grabbing !important; user-selec
 #sb-publish-btn .sb-item-label { color: inherit !important; font-weight: 600; }
 #sb-publish-btn .sb-item-icon  { color: inherit !important; }
 </style>
-<script src="chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/js/recordConsoleEvents.js"></script><script src="chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/js/recordNetworkEvents.js"></script></head>
+<script src="chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/js/recordConsoleEvents.js"></script><script src="chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/js/recordNetworkEvents.js"></script><script src="chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/js/recordConsoleEvents.js"></script><script src="chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/js/recordNetworkEvents.js"></script></head>
 <body class="">
 
 <div id="fmt-toolbar" style="display: none; left: 184.398px; top: 151px;">
@@ -962,7 +962,7 @@ body.now-dragging, body.now-dragging * { cursor: grabbing !important; user-selec
       </svg>
       <div class="sb-chart-info">
         <div class="sb-chart-name" title="New Chart — Design Execution Plan">New Chart — Design Execution Plan</div>
-        <div class="sb-chart-meta">54m ago</div>
+        <div class="sb-chart-meta">1h ago</div>
       </div>
       <button class="sb-chart-menu-btn" title="Options">···</button></div><div class="sb-chart-card active" data-chart-id="chart-initial">
       <svg class="sb-chart-icon" width="14" height="14" viewBox="0 0 16 16" fill="currentColor">
@@ -971,7 +971,7 @@ body.now-dragging, body.now-dragging * { cursor: grabbing !important; user-selec
       </svg>
       <div class="sb-chart-info">
         <div class="sb-chart-name" title="Dashboard Refresh Vision">Dashboard Refresh Vision</div>
-        <div class="sb-chart-meta">just now</div>
+        <div class="sb-chart-meta">6m ago</div>
       </div>
       <button class="sb-chart-menu-btn" title="Options">···</button></div></div>
   </div>
@@ -1028,12 +1028,12 @@ body.now-dragging, body.now-dragging * { cursor: grabbing !important; user-selec
   <div class="card-header">
     <div>
       <h2 contenteditable="true" spellcheck="false" data-fmt="bold-only">Design Execution</h2>
-      <p contenteditable="true" spellcheck="false" data-fmt="rich"><b>3 Critical Initiatives + 1 Foundation Track</b></p>
+      <p contenteditable="true" spellcheck="false" data-fmt="rich">3 Critical Initiatives + 1 Foundation Track</p>
     </div>
     <div style="display:flex;align-items:center;gap:10px;">
-      <button class="now-toggle-btn" id="now-toggle-btn" title="Show / hide current-week marker">
+      <button class="now-toggle-btn is-active" id="now-toggle-btn" title="Show / hide current-week marker">
         <span class="now-toggle-thumb"></span>
-        <span class="now-toggle-lbl">Off</span>
+        <span class="now-toggle-lbl">Now</span>
       </button>
       <div class="wk-ctrl">
         <button class="wk-ctrl-btn" id="wk-minus">−</button>
@@ -1264,8 +1264,8 @@ body.now-dragging, body.now-dragging * { cursor: grabbing !important; user-selec
                    <div class="bar-progress-thumb" data-role="progress-thumb" style="left: 13px; --task-color: #84CC16;"></div>
                    <div class="resize-handle right" data-role="resize-right"></div></div></td></tr></tbody></table>
     <!-- Now needle + elapsed overlay — positioned absolutely inside gantt-wrap -->
-    <div id="now-overlay" style="display: none; left: 771.727px; width: 0px;"></div>
-    <div id="now-needle" style="display: none; left: 771.727px;">
+    <div id="now-overlay" style="display: block; left: 859.508px; width: 0px;"></div>
+    <div id="now-needle" style="display: block; left: 859.508px;">
       <!-- Vertical oval — drag handle, bottom merges into the line -->
       <div id="now-badge" title="Drag to reposition · click Now to hide"></div>
     </div>
