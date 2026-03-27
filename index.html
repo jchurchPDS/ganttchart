@@ -895,10 +895,10 @@ body.now-dragging, body.now-dragging * { cursor: grabbing !important; user-selec
 #sb-publish-btn .sb-item-label { color: inherit !important; font-weight: 600; }
 #sb-publish-btn .sb-item-icon  { color: inherit !important; }
 </style>
-</head>
-<body class="sb-open">
+<script src="chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/js/recordConsoleEvents.js"></script><script src="chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/js/recordNetworkEvents.js"></script></head>
+<body class="">
 
-<div id="fmt-toolbar" style="display: none; left: 206.594px; top: 524.922px;">
+<div id="fmt-toolbar" style="display: none; left: 473.727px; top: 300px;">
   <button data-cmd="bold" title="Bold (⌘B)"><b>B</b></button>
   <button data-cmd="italic" title="Italic (⌘I)" class="fmt-rich"><i style="font-style:italic">I</i></button>
   <span class="fmt-sep fmt-rich"></span>
@@ -926,7 +926,7 @@ body.now-dragging, body.now-dragging * { cursor: grabbing !important; user-selec
 <input type="date" class="wk1-date-input" id="wk1-date-input">
 
 <!-- ══ Sidebar ══════════════════════════════════════════════════════════════ -->
-<div id="sidebar" class="is-open">
+<div id="sidebar" class="">
   <div class="sb-logo-area" id="sb-toggle" title="Toggle sidebar">
     <div class="sb-logo" id="sb-logo-wrap">
       <!-- SpotOn ring logo -->
@@ -955,14 +955,14 @@ body.now-dragging, body.now-dragging * { cursor: grabbing !important; user-selec
     <div class="sb-library-header">Charts</div>
     <div class="sb-charts" id="sb-charts">
       <div class="sb-empty" id="sb-empty" style="display: none;">No saved charts yet.<br>Click + to create one.</div>
-    <div class="sb-chart-card" data-chart-id="chart-1774621355653">
+    <div class="sb-chart-card" data-chart-id="chart-1774626935479">
       <svg class="sb-chart-icon" width="14" height="14" viewBox="0 0 16 16" fill="currentColor">
         <path d="M2 11.5A.5.5 0 0 1 2.5 11h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm4-4A.5.5 0 0 1 6.5 7h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm4-4A.5.5 0 0 1 10.5 3h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5z"></path>
         <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h11A1.5 1.5 0 0 1 15 2.5v11a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 13.5v-11zm1.5-.5a.5.5 0 0 0-.5.5v11a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 .5-.5v-11a.5.5 0 0 0-.5-.5h-11z"></path>
       </svg>
       <div class="sb-chart-info">
         <div class="sb-chart-name" title="New Chart — Design Execution Plan">New Chart — Design Execution Plan</div>
-        <div class="sb-chart-meta">37m ago</div>
+        <div class="sb-chart-meta">1h ago</div>
       </div>
       <button class="sb-chart-menu-btn" title="Options">···</button></div><div class="sb-chart-card active" data-chart-id="chart-initial">
       <svg class="sb-chart-icon" width="14" height="14" viewBox="0 0 16 16" fill="currentColor">
@@ -1027,13 +1027,13 @@ body.now-dragging, body.now-dragging * { cursor: grabbing !important; user-selec
 <div class="card">
   <div class="card-header">
     <div>
-      <h2 contenteditable="true" spellcheck="false" data-fmt="bold-only">Design Execution Timeline</h2>
-      <p contenteditable="true" spellcheck="false" data-fmt="rich">Drag bars to reschedule · Click any text to edit</p>
+      <h2 contenteditable="true" spellcheck="false" data-fmt="bold-only">Design Execution</h2>
+      <p contenteditable="true" spellcheck="false" data-fmt="rich">3 Critical Initiatives + 1 Foundation Track</p>
     </div>
     <div style="display:flex;align-items:center;gap:10px;">
-      <button class="now-toggle-btn" id="now-toggle-btn" title="Show / hide current-week marker">
+      <button class="now-toggle-btn is-active" id="now-toggle-btn" title="Show / hide current-week marker">
         <span class="now-toggle-thumb"></span>
-        <span class="now-toggle-lbl">Off</span>
+        <span class="now-toggle-lbl">Now</span>
       </button>
       <div class="wk-ctrl">
         <button class="wk-ctrl-btn" id="wk-minus">−</button>
@@ -1043,7 +1043,7 @@ body.now-dragging, body.now-dragging * { cursor: grabbing !important; user-selec
       </div>
     </div>
     <!-- legend kept in DOM for rebuildLegend() compatibility -->
-    <div class="legend" id="legend" style="display:none;"><div class="legend-item" data-init-id="init-1774569913800"><div class="legend-swatch" style="background: rgb(129, 140, 248);"></div><span>DASHBOARD IA</span></div><div class="legend-item" data-init-id="init-1774624505998"><div class="legend-swatch" style="background: rgb(45, 212, 191);"></div><span>STRATEGY</span></div><div class="legend-item" data-init-id="init-1774569913802"><div class="legend-swatch" style="background: rgb(156, 163, 175);"></div><span>Initiative 2</span></div></div>
+    <div class="legend" id="legend" style="display:none;"><div class="legend-item" data-init-id="init1"><div class="legend-swatch" style="background: rgb(129, 140, 248);"></div><span>Information Architecture</span></div><div class="legend-item" data-init-id="init2"><div class="legend-swatch" style="background: rgb(45, 212, 191);"></div><span>MERCHANT MODEL</span></div><div class="legend-item" data-init-id="init3"><div class="legend-swatch" style="background: rgb(232, 121, 249);"></div><span>DESIGN STRATEGY</span></div><div class="legend-item" data-init-id="foundation"><div class="legend-swatch" style="background: rgb(132, 204, 22);"></div><span>FoundationS</span></div></div>
   </div>
 
   <div class="gantt-wrap">
@@ -1054,128 +1054,218 @@ body.now-dragging, body.now-dragging * { cursor: grabbing !important; user-selec
         <col class="col-progress" id="col-progress">
         <col class="col-team" id="col-team">
       <col class="col-wk"><col class="col-wk"><col class="col-wk"><col class="col-wk"><col class="col-wk"><col class="col-wk"></colgroup>
-      <thead id="gantt-head"><tr class="phase-row"><td class="meta"></td><td colspan="1" class="meta domain-filter-cell" id="domain-filter-cell"><div class="domain-filter-inline"><button class="domain-tab active"><span class="tab-dot"></span><span class="tab-text">All</span></button><button class="domain-tab" style="--tab-color: #1063F9;"><span class="tab-dot" style="background: rgb(16, 99, 249);"></span><span class="tab-text">MBO</span></button><button class="domain-tab" style="--tab-color: #04B4A2;"><span class="tab-dot" style="background: rgb(4, 180, 162);"></span><span class="tab-text">DS</span></button><button class="domain-tab" style="--tab-color: #7C3AED;"><span class="tab-dot" style="background: rgb(124, 58, 237);"></span><span class="tab-text">SS</span></button><button class="domain-tab" style="--tab-color: #EA580C;"><span class="tab-dot" style="background: rgb(234, 88, 12);"></span><span class="tab-text">HOS</span></button><button class="domain-tab" style="--tab-color: #16A34A;"><span class="tab-dot" style="background: rgb(22, 163, 74);"></span><span class="tab-text">GST</span></button><button class="domain-tab" style="--tab-color: #D97706;"><span class="tab-dot" style="background: rgb(217, 119, 6);"></span><span class="tab-text">FIN</span></button><button class="domain-manage-btn" title="Manage labels">···</button></div></td><td class="meta"></td><td class="meta"></td><td colspan="1" class="ph-hd" data-phase-id="ph1" style="background: rgb(248, 250, 252); color: rgba(0, 0, 0, 0.82); --ph-accent: #94A3B8; --ph-r: 148; --ph-g: 163; --ph-b: 184;"><span class="phase-label" contenteditable="true" spellcheck="false" data-fmt="bold-only">Phase 1</span><button class="phase-settings-btn" title="Phase options">···</button></td><td colspan="4" class="ph-hd" data-phase-id="ph2" style="background: rgb(250, 250, 249); color: rgba(0, 0, 0, 0.82); --ph-accent: #C4B5A5; --ph-r: 196; --ph-g: 181; --ph-b: 165;"><span class="phase-label" contenteditable="true" spellcheck="false" data-fmt="bold-only">Phase 2</span><button class="phase-settings-btn" title="Phase options">···</button></td><td colspan="1" class="ph-hd" data-phase-id="ph3" style="background: rgb(254, 252, 251); color: rgba(0, 0, 0, 0.82); --ph-accent: #E5D5C0; --ph-r: 229; --ph-g: 213; --ph-b: 192;"><span class="phase-label" contenteditable="true" spellcheck="false" data-fmt="bold-only">Phase 3</span><button class="phase-settings-btn" title="Phase options">···</button></td></tr><tr class="week-row"><td class="meta" style="border-right: none;"></td><td class="meta"><span class="col-header-label">Task / Deliverable</span><div class="col-resizer"></div></td><td class="meta"><span class="col-header-label">Progress</span></td><td class="meta"><span class="col-header-label">Team Owner</span><div class="col-resizer"></div></td><td class="wk1-cell" title="Click to set a start date for the timeline"><span class="wk1-label">Wk 1</span><span style="font-size: 10px; color: rgb(203, 213, 225); font-weight: 400;"> · </span><span class="wk1-date-lbl wk-date"></span><span class="wk1-cal">📅</span><span class="wk1-clear" title="Clear date">×</span></td><td style="border-left: 1px solid rgb(200, 211, 224);"><span class="wk-num">Wk 2</span><span style="font-size: 10px; color: rgb(203, 213, 225); font-weight: 400;"> · </span><span class="wk-date"></span></td><td><span class="wk-num">Wk 3</span><span style="font-size: 10px; color: rgb(203, 213, 225); font-weight: 400;"> · </span><span class="wk-date"></span></td><td><span class="wk-num">Wk 4</span><span style="font-size: 10px; color: rgb(203, 213, 225); font-weight: 400;"> · </span><span class="wk-date"></span></td><td><span class="wk-num">Wk 5</span><span style="font-size: 10px; color: rgb(203, 213, 225); font-weight: 400;"> · </span><span class="wk-date"></span></td><td style="border-left: 1px solid rgb(200, 211, 224);"><span class="wk-num">Wk 6</span><span style="font-size: 10px; color: rgb(203, 213, 225); font-weight: 400;"> · </span><span class="wk-date"></span></td></tr></thead>
-    <tbody class="init-group" id="group-init-1774569913800" data-init-id="init-1774569913800"><tr class="init-row"><td class="handle-cell" title="Drag to reorder" style="background: rgb(230, 232, 254);"><div class="priority-badge" title="Click for options · Drag to reorder" style="background: rgb(129, 140, 248);">01</div></td><td class="label-cell" colspan="3" style="border-right: 1px solid rgb(226, 232, 240); background: rgb(230, 232, 254);"><div class="label-inner"><span class="init-caret"><svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="2,4 6,8 10,4"></polyline></svg></span><span class="init-label-text" contenteditable="true" spellcheck="false" data-fmt="bold-only" style="color: rgba(0, 0, 0, 0.9);">DASHBOARD IA</span></div></td><td colspan="6" class="gantt-cell" style="background: rgb(230, 232, 254); border-left: none;"></td></tr><tr class="task-row" data-task-id="task-1774569913801"><td class="handle-cell"><div class="task-grip"><svg width="10" height="14" viewBox="0 0 10 14" fill="currentColor"><circle cx="3" cy="2.5" r="1.2"></circle><circle cx="7" cy="2.5" r="1.2"></circle><circle cx="3" cy="7" r="1.2"></circle><circle cx="7" cy="7" r="1.2"></circle><circle cx="3" cy="11.5" r="1.2"></circle><circle cx="7" cy="11.5" r="1.2"></circle></svg></div></td><td class="task-name-cell"><div class="task-name-wrap"><div class="task-name-text" contenteditable="false" spellcheck="false" data-fmt="rich" title="Click to edit task name">Finalize Dashboard Vision: future state doc, team, and scope</div><div class="domain-badge is-unassigned">+</div><button class="task-open-btn" title="Open task detail"><svg width="14" height="14" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2H2a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V7"></path><polyline points="8,1 11,1 11,4"></polyline><line x1="5.5" y1="6.5" x2="11" y2="1"></line></svg></button><button class="task-menu-btn" title="Task options">···</button></div></td><td class="progress-col-cell"><div class="progress-circle-wrap" data-task-id="task-1774569913801">
+      <thead id="gantt-head"><tr class="phase-row"><td class="meta"></td><td colspan="1" class="meta domain-filter-cell" id="domain-filter-cell"><div class="domain-filter-inline"><button class="domain-tab active"><span class="tab-dot"></span><span class="tab-text">All</span></button><button class="domain-tab" style="--tab-color: #1063F9;"><span class="tab-dot" style="background: rgb(16, 99, 249);"></span><span class="tab-text">MBO</span></button><button class="domain-tab" style="--tab-color: #04B4A2;"><span class="tab-dot" style="background: rgb(4, 180, 162);"></span><span class="tab-text">DS</span></button><button class="domain-tab" style="--tab-color: #7C3AED;"><span class="tab-dot" style="background: rgb(124, 58, 237);"></span><span class="tab-text">SS</span></button><button class="domain-tab" style="--tab-color: #EA580C;"><span class="tab-dot" style="background: rgb(234, 88, 12);"></span><span class="tab-text">HOS</span></button><button class="domain-tab" style="--tab-color: #16A34A;"><span class="tab-dot" style="background: rgb(22, 163, 74);"></span><span class="tab-text">GST</span></button><button class="domain-tab" style="--tab-color: #D97706;"><span class="tab-dot" style="background: rgb(217, 119, 6);"></span><span class="tab-text">FIN</span></button><button class="domain-manage-btn" title="Manage labels">···</button></div></td><td class="meta"></td><td class="meta"></td><td colspan="1" class="ph-hd" data-phase-id="ph1" style="background: rgb(248, 250, 252); color: rgba(0, 0, 0, 0.82); --ph-accent: #D9DEE5; --ph-r: 217; --ph-g: 222; --ph-b: 229;"><span class="phase-label" contenteditable="true" spellcheck="false" data-fmt="bold-only">KICKOFF</span><button class="phase-settings-btn" title="Phase options">···</button></td><td colspan="4" class="ph-hd" data-phase-id="ph2" style="background: rgb(254, 252, 251); color: rgba(0, 0, 0, 0.82); --ph-accent: #EFE6D9; --ph-r: 239; --ph-g: 230; --ph-b: 217;"><span class="phase-label" contenteditable="true" spellcheck="false" data-fmt="bold-only">DESIGN &amp; REFINE</span><button class="phase-settings-btn" title="Phase options">···</button></td><td colspan="1" class="ph-hd" data-phase-id="ph3" style="background: rgb(250, 250, 249); color: rgba(0, 0, 0, 0.82); --ph-accent: #DCD3C9; --ph-r: 220; --ph-g: 211; --ph-b: 201;"><span class="phase-label" contenteditable="true" spellcheck="false" data-fmt="bold-only">ALIGN</span><button class="phase-settings-btn" title="Phase options">···</button></td></tr><tr class="week-row"><td class="meta" style="border-right: none;"></td><td class="meta"><span class="col-header-label">Task / Deliverable</span><div class="col-resizer"></div></td><td class="meta"><span class="col-header-label">Progress</span></td><td class="meta"><span class="col-header-label">Team Owner</span><div class="col-resizer"></div></td><td class="wk1-cell" title="Click to set a start date for the timeline"><span class="wk1-label">Wk 1</span><span style="font-size: 10px; color: rgb(203, 213, 225); font-weight: 400;"> · </span><span class="wk1-date-lbl wk-date">03/30</span><span class="wk1-cal">📅</span><span class="wk1-clear" title="Clear date">×</span></td><td style="border-left: 1px solid rgb(200, 211, 224);"><span class="wk-num">Wk 2</span><span style="font-size: 10px; color: rgb(203, 213, 225); font-weight: 400;"> · </span><span class="wk-date">04/06</span></td><td><span class="wk-num">Wk 3</span><span style="font-size: 10px; color: rgb(203, 213, 225); font-weight: 400;"> · </span><span class="wk-date">04/13</span></td><td><span class="wk-num">Wk 4</span><span style="font-size: 10px; color: rgb(203, 213, 225); font-weight: 400;"> · </span><span class="wk-date">04/20</span></td><td><span class="wk-num">Wk 5</span><span style="font-size: 10px; color: rgb(203, 213, 225); font-weight: 400;"> · </span><span class="wk-date">04/27</span></td><td style="border-left: 1px solid rgb(200, 211, 224);"><span class="wk-num">Wk 6</span><span style="font-size: 10px; color: rgb(203, 213, 225); font-weight: 400;"> · </span><span class="wk-date">05/04</span></td></tr></thead>
+    <tbody class="init-group" id="group-init1" data-init-id="init1"><tr class="init-row"><td class="handle-cell" title="Drag to reorder" style="background: rgb(230, 232, 254);"><div class="priority-badge" title="Click for options · Drag to reorder" style="background: rgb(129, 140, 248);">01</div></td><td class="label-cell" colspan="3" style="border-right: 1px solid rgb(226, 232, 240); background: rgb(230, 232, 254);"><div class="label-inner"><span class="init-caret"><svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="2,4 6,8 10,4"></polyline></svg></span><span class="init-label-text" contenteditable="true" spellcheck="false" data-fmt="bold-only" style="color: rgba(0, 0, 0, 0.9);">Information Architecture</span></div></td><td colspan="6" class="gantt-cell" style="background: rgb(230, 232, 254); border-left: none;"></td></tr><tr class="task-row" data-task-id="i1a"><td class="handle-cell"><div class="task-grip"><svg width="10" height="14" viewBox="0 0 10 14" fill="currentColor"><circle cx="3" cy="2.5" r="1.2"></circle><circle cx="7" cy="2.5" r="1.2"></circle><circle cx="3" cy="7" r="1.2"></circle><circle cx="7" cy="7" r="1.2"></circle><circle cx="3" cy="11.5" r="1.2"></circle><circle cx="7" cy="11.5" r="1.2"></circle></svg></div></td><td class="task-name-cell"><div class="task-name-wrap"><div class="task-name-text" contenteditable="false" spellcheck="false" data-fmt="rich" title="Click to edit task name">Finalize Dashboard Experience Team charter and scope</div><div class="domain-badge is-unassigned">+</div><button class="task-open-btn" title="Open task detail"><svg width="14" height="14" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2H2a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V7"></path><polyline points="8,1 11,1 11,4"></polyline><line x1="5.5" y1="6.5" x2="11" y2="1"></line></svg></button><button class="task-menu-btn" title="Task options">···</button></div></td><td class="progress-col-cell"><div class="progress-circle-wrap" data-task-id="i1a">
     <svg width="30" height="30" viewBox="0 0 30 30" class="prog-svg">
       <circle cx="15" cy="15" r="10" fill="none" stroke="#E8ECF1" stroke-width="5.5"></circle>
-      <circle cx="15" cy="15" r="10" fill="none" stroke="#818CF8" stroke-width="5.5" stroke-dasharray="33.30 62.83" stroke-linecap="round" transform="rotate(-90 15 15)" class="prog-arc"></circle>
+      <circle cx="15" cy="15" r="10" fill="none" stroke="#818CF8" stroke-width="5.5" stroke-dasharray="28.90 62.83" stroke-linecap="round" transform="rotate(-90 15 15)" class="prog-arc"></circle>
     </svg>
-    <span class="prog-pct">53%</span></div></td><td class="task-team-cell"><input type="text" class="team-input" placeholder="Add owner…"></td><td colspan="6" class="gantt-cell" data-task-id="task-1774569913801"><div class="gantt-bg"><div class="gantt-band" style="flex: 1 1 0%; background: rgb(241, 245, 249);"></div><div class="gantt-band" style="flex: 4 1 0%; background: rgb(245, 243, 240);"></div><div class="gantt-band" style="flex: 1 1 0%; background: rgb(253, 248, 244);"></div></div><div class="gantt-grid" style="grid-template-columns: repeat(6, 1fr);"><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div></div><div class="task-bar bar-has-progress" data-task-id="task-1774569913801" style="left: 0%; width: 16.6667%; background: linear-gradient(rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.09) 100%), linear-gradient(to right, rgb(129, 140, 248) 53%, rgb(203, 213, 225) 53%);"><div class="resize-handle left" data-role="resize-left"></div>
-                   <div class="bar-label" style="color: rgba(0, 0, 0, 0.88);">Finalize Dashboard Vision: future…</div>
-                   <div class="bar-pct" style="color: rgba(0, 0, 0, 0.88);">53%</div>
-                   <div class="bar-progress-thumb" data-role="progress-thumb" style="left: 53%; --task-color: #818CF8;"></div>
-                   <div class="resize-handle right" data-role="resize-right"></div></div></td></tr><tr class="task-row" data-task-id="task-106"><td class="handle-cell"><div class="task-grip"><svg width="10" height="14" viewBox="0 0 10 14" fill="currentColor"><circle cx="3" cy="2.5" r="1.2"></circle><circle cx="7" cy="2.5" r="1.2"></circle><circle cx="3" cy="7" r="1.2"></circle><circle cx="7" cy="7" r="1.2"></circle><circle cx="3" cy="11.5" r="1.2"></circle><circle cx="7" cy="11.5" r="1.2"></circle></svg></div></td><td class="task-name-cell"><div class="task-name-wrap"><div class="task-name-text" contenteditable="false" spellcheck="false" data-fmt="rich" title="Click to edit task name">Desktop experience: identify &amp; prioritize key flows, entry points, and navigation behaviors</div><div class="domain-badge is-unassigned">+</div><button class="task-open-btn" title="Open task detail"><svg width="14" height="14" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2H2a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V7"></path><polyline points="8,1 11,1 11,4"></polyline><line x1="5.5" y1="6.5" x2="11" y2="1"></line></svg></button><button class="task-menu-btn" title="Task options">···</button></div></td><td class="progress-col-cell"><div class="progress-circle-wrap" data-task-id="task-106">
+    <span class="prog-pct">46%</span></div></td><td class="task-team-cell"><input type="text" class="team-input" placeholder="Add owner…"></td><td colspan="6" class="gantt-cell" data-task-id="i1a"><div class="gantt-bg"><div class="gantt-band" style="flex: 1 1 0%; background: rgb(241, 245, 249);"></div><div class="gantt-band" style="flex: 4 1 0%; background: rgb(253, 248, 244);"></div><div class="gantt-band" style="flex: 1 1 0%; background: rgb(245, 243, 240);"></div></div><div class="gantt-grid" style="grid-template-columns: repeat(6, 1fr);"><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div></div><div class="task-bar bar-has-progress" data-task-id="i1a" style="left: 0%; width: 16.6667%; background: linear-gradient(rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.09) 100%), linear-gradient(to right, rgb(129, 140, 248) 46%, rgb(203, 213, 225) 46%);"><div class="resize-handle left" data-role="resize-left"></div>
+                   <div class="bar-label" style="color: rgba(0, 0, 0, 0.88);">Finalize Dashboard Experience Team…</div>
+                   <div class="bar-pct" style="color: rgba(0, 0, 0, 0.88);">46%</div>
+                   <div class="bar-progress-thumb" data-role="progress-thumb" style="left: 46%; --task-color: #818CF8;"></div>
+                   <div class="resize-handle right" data-role="resize-right"></div></div></td></tr><tr class="task-row" data-task-id="i1b"><td class="handle-cell"><div class="task-grip"><svg width="10" height="14" viewBox="0 0 10 14" fill="currentColor"><circle cx="3" cy="2.5" r="1.2"></circle><circle cx="7" cy="2.5" r="1.2"></circle><circle cx="3" cy="7" r="1.2"></circle><circle cx="7" cy="7" r="1.2"></circle><circle cx="3" cy="11.5" r="1.2"></circle><circle cx="7" cy="11.5" r="1.2"></circle></svg></div></td><td class="task-name-cell"><div class="task-name-wrap"><div class="task-name-text" contenteditable="false" spellcheck="false" data-fmt="rich" title="Click to edit task name"><span style="background-color: rgb(255, 255, 255);">Desktop experience: identify &amp; prioritize key flows, entry points, and navigation behaviors</span></div><div class="domain-badge is-unassigned">+</div><button class="task-open-btn" title="Open task detail"><svg width="14" height="14" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2H2a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V7"></path><polyline points="8,1 11,1 11,4"></polyline><line x1="5.5" y1="6.5" x2="11" y2="1"></line></svg></button><button class="task-menu-btn" title="Task options">···</button></div></td><td class="progress-col-cell"><div class="progress-circle-wrap" data-task-id="i1b">
     <svg width="30" height="30" viewBox="0 0 30 30" class="prog-svg">
       <circle cx="15" cy="15" r="10" fill="none" stroke="#E8ECF1" stroke-width="5.5"></circle>
       <circle cx="15" cy="15" r="10" fill="none" stroke="#CBD5E1" stroke-width="5.5" stroke-dasharray="0.00 62.83" stroke-linecap="round" transform="rotate(-90 15 15)" class="prog-arc"></circle>
     </svg>
-    <span class="prog-pct">0%</span></div></td><td class="task-team-cell"><input type="text" class="team-input" placeholder="Add owner…"></td><td colspan="6" class="gantt-cell" data-task-id="task-106"><div class="gantt-bg"><div class="gantt-band" style="flex: 1 1 0%; background: rgb(241, 245, 249);"></div><div class="gantt-band" style="flex: 4 1 0%; background: rgb(245, 243, 240);"></div><div class="gantt-band" style="flex: 1 1 0%; background: rgb(253, 248, 244);"></div></div><div class="gantt-grid" style="grid-template-columns: repeat(6, 1fr);"><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div></div><div class="task-bar" data-task-id="task-106" style="left: 0%; width: 16.6667%; background: linear-gradient(rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.09) 100%), rgb(203, 213, 225);"><div class="resize-handle left" data-role="resize-left"></div>
+    <span class="prog-pct">0%</span></div></td><td class="task-team-cell"><input type="text" class="team-input" placeholder="Add owner…"></td><td colspan="6" class="gantt-cell" data-task-id="i1b"><div class="gantt-bg"><div class="gantt-band" style="flex: 1 1 0%; background: rgb(241, 245, 249);"></div><div class="gantt-band" style="flex: 4 1 0%; background: rgb(253, 248, 244);"></div><div class="gantt-band" style="flex: 1 1 0%; background: rgb(245, 243, 240);"></div></div><div class="gantt-grid" style="grid-template-columns: repeat(6, 1fr);"><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div></div><div class="task-bar" data-task-id="i1b" style="left: 0%; width: 33.3333%; background: linear-gradient(rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.09) 100%), rgb(203, 213, 225);"><div class="resize-handle left" data-role="resize-left"></div>
                    <div class="bar-label" style="color: rgba(0, 0, 0, 0.88);">Desktop experience: identify &amp;…</div>
                    <div class="bar-pct" style="color: rgba(0, 0, 0, 0.88);"></div>
                    <div class="bar-progress-thumb" data-role="progress-thumb" style="left: 13px; --task-color: #818CF8;"></div>
-                   <div class="resize-handle right" data-role="resize-right"></div></div></td></tr><tr class="task-row" data-task-id="task-105"><td class="handle-cell"><div class="task-grip"><svg width="10" height="14" viewBox="0 0 10 14" fill="currentColor"><circle cx="3" cy="2.5" r="1.2"></circle><circle cx="7" cy="2.5" r="1.2"></circle><circle cx="3" cy="7" r="1.2"></circle><circle cx="7" cy="7" r="1.2"></circle><circle cx="3" cy="11.5" r="1.2"></circle><circle cx="7" cy="11.5" r="1.2"></circle></svg></div></td><td class="task-name-cell"><div class="task-name-wrap"><div class="task-name-text" contenteditable="false" spellcheck="false" data-fmt="rich" title="Click to edit task name">Mobile experience: identify &amp; prioritize key flows, entry points, and navigation behaviors</div><div class="domain-badge is-unassigned">+</div><button class="task-open-btn" title="Open task detail"><svg width="14" height="14" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2H2a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V7"></path><polyline points="8,1 11,1 11,4"></polyline><line x1="5.5" y1="6.5" x2="11" y2="1"></line></svg></button><button class="task-menu-btn" title="Task options">···</button></div></td><td class="progress-col-cell"><div class="progress-circle-wrap" data-task-id="task-105">
-    <svg width="30" height="30" viewBox="0 0 30 30" class="prog-svg">
-      <circle cx="15" cy="15" r="10" fill="none" stroke="#E8ECF1" stroke-width="5.5"></circle>
-      <circle cx="15" cy="15" r="10" fill="none" stroke="#818CF8" stroke-width="5.5" stroke-dasharray="50.27 62.83" stroke-linecap="round" transform="rotate(-90 15 15)" class="prog-arc"></circle>
-    </svg>
-    <span class="prog-pct">80%</span></div></td><td class="task-team-cell"><input type="text" class="team-input" placeholder="Add owner…"></td><td colspan="6" class="gantt-cell" data-task-id="task-105"><div class="gantt-bg"><div class="gantt-band" style="flex: 1 1 0%; background: rgb(241, 245, 249);"></div><div class="gantt-band" style="flex: 4 1 0%; background: rgb(245, 243, 240);"></div><div class="gantt-band" style="flex: 1 1 0%; background: rgb(253, 248, 244);"></div></div><div class="gantt-grid" style="grid-template-columns: repeat(6, 1fr);"><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div></div><div class="task-bar bar-has-progress" data-task-id="task-105" style="left: 0%; width: 33.3333%; background: linear-gradient(rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.09) 100%), linear-gradient(to right, rgb(129, 140, 248) 80%, rgb(203, 213, 225) 80%);"><div class="resize-handle left" data-role="resize-left"></div>
-                   <div class="bar-label" style="color: rgba(0, 0, 0, 0.88);">Mobile experience: identify &amp;…</div>
-                   <div class="bar-pct" style="color: rgba(0, 0, 0, 0.88);">80%</div>
-                   <div class="bar-progress-thumb" data-role="progress-thumb" style="left: 80%; --task-color: #818CF8;"></div>
-                   <div class="resize-handle right" data-role="resize-right"></div></div></td></tr><tr class="task-row" data-task-id="task-102"><td class="handle-cell"><div class="task-grip"><svg width="10" height="14" viewBox="0 0 10 14" fill="currentColor"><circle cx="3" cy="2.5" r="1.2"></circle><circle cx="7" cy="2.5" r="1.2"></circle><circle cx="3" cy="7" r="1.2"></circle><circle cx="7" cy="7" r="1.2"></circle><circle cx="3" cy="11.5" r="1.2"></circle><circle cx="7" cy="11.5" r="1.2"></circle></svg></div></td><td class="task-name-cell"><div class="task-name-wrap"><div class="task-name-text" contenteditable="false" spellcheck="false" data-fmt="rich" title="Click to edit task name">Define baseline metrics vs success metrics - time-on-task, click count, etc&nbsp;</div><div class="domain-badge is-unassigned">+</div><button class="task-open-btn" title="Open task detail"><svg width="14" height="14" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2H2a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V7"></path><polyline points="8,1 11,1 11,4"></polyline><line x1="5.5" y1="6.5" x2="11" y2="1"></line></svg></button><button class="task-menu-btn" title="Task options">···</button></div></td><td class="progress-col-cell"><div class="progress-circle-wrap" data-task-id="task-102">
-    <svg width="30" height="30" viewBox="0 0 30 30" class="prog-svg">
-      <circle cx="15" cy="15" r="10" fill="none" stroke="#E8ECF1" stroke-width="5.5"></circle>
-      <circle cx="15" cy="15" r="10" fill="none" stroke="#2DD4BF" stroke-width="5.5" stroke-dasharray="30.16 62.83" stroke-linecap="round" transform="rotate(-90 15 15)" class="prog-arc"></circle>
-    </svg>
-    <span class="prog-pct">48%</span></div></td><td class="task-team-cell"><input type="text" class="team-input" placeholder="Add owner…"></td><td colspan="6" class="gantt-cell" data-task-id="task-102"><div class="gantt-bg"><div class="gantt-band" style="flex: 1 1 0%; background: rgb(241, 245, 249);"></div><div class="gantt-band" style="flex: 4 1 0%; background: rgb(245, 243, 240);"></div><div class="gantt-band" style="flex: 1 1 0%; background: rgb(253, 248, 244);"></div></div><div class="gantt-grid" style="grid-template-columns: repeat(6, 1fr);"><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div></div><div class="task-bar bar-has-progress" data-task-id="task-102" style="left: 0%; width: 16.6667%; background: linear-gradient(rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.09) 100%), linear-gradient(to right, rgb(129, 140, 248) 27%, rgb(203, 213, 225) 27%);"><div class="resize-handle left" data-role="resize-left"></div>
-                   <div class="bar-label" style="color: rgba(0, 0, 0, 0.88);">Define baseline metrics vs…</div>
-                   <div class="bar-pct" style="color: rgba(0, 0, 0, 0.88);">27%</div>
-                   <div class="bar-progress-thumb" data-role="progress-thumb" style="left: 27%; --task-color: #818CF8;"></div>
-                   <div class="resize-handle right" data-role="resize-right"></div></div></td></tr><tr class="task-row" data-task-id="task-101"><td class="handle-cell"><div class="task-grip"><svg width="10" height="14" viewBox="0 0 10 14" fill="currentColor"><circle cx="3" cy="2.5" r="1.2"></circle><circle cx="7" cy="2.5" r="1.2"></circle><circle cx="3" cy="7" r="1.2"></circle><circle cx="7" cy="7" r="1.2"></circle><circle cx="3" cy="11.5" r="1.2"></circle><circle cx="7" cy="11.5" r="1.2"></circle></svg></div></td><td class="task-name-cell"><div class="task-name-wrap"><div class="task-name-text" contenteditable="false" spellcheck="false" data-fmt="rich" title="Click to edit task name">Redesign global navigation to simplify experience and enable multi-location future vision</div><div class="domain-badge is-unassigned">+</div><button class="task-open-btn" title="Open task detail"><svg width="14" height="14" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2H2a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V7"></path><polyline points="8,1 11,1 11,4"></polyline><line x1="5.5" y1="6.5" x2="11" y2="1"></line></svg></button><button class="task-menu-btn" title="Task options">···</button></div></td><td class="progress-col-cell"><div class="progress-circle-wrap" data-task-id="task-101">
-    <svg width="30" height="30" viewBox="0 0 30 30" class="prog-svg">
-      <circle cx="15" cy="15" r="10" fill="none" stroke="#E8ECF1" stroke-width="5.5"></circle>
-      <circle cx="15" cy="15" r="10" fill="none" stroke="#2DD4BF" stroke-width="5.5" stroke-dasharray="22.62 62.83" stroke-linecap="round" transform="rotate(-90 15 15)" class="prog-arc"></circle>
-    </svg>
-    <span class="prog-pct">36%</span></div></td><td class="task-team-cell"><input type="text" class="team-input" placeholder="Add owner…"></td><td colspan="6" class="gantt-cell" data-task-id="task-101"><div class="gantt-bg"><div class="gantt-band" style="flex: 1 1 0%; background: rgb(241, 245, 249);"></div><div class="gantt-band" style="flex: 4 1 0%; background: rgb(245, 243, 240);"></div><div class="gantt-band" style="flex: 1 1 0%; background: rgb(253, 248, 244);"></div></div><div class="gantt-grid" style="grid-template-columns: repeat(6, 1fr);"><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div></div><div class="task-bar" data-task-id="task-101" style="left: 0%; width: 16.6667%; background: linear-gradient(rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.09) 100%), rgb(203, 213, 225);"><div class="resize-handle left" data-role="resize-left"></div>
-                   <div class="bar-label" style="color: rgba(0, 0, 0, 0.88);">Redesign global navigation to…</div>
-                   <div class="bar-pct" style="color: rgba(0, 0, 0, 0.88);"></div>
-                   <div class="bar-progress-thumb" data-role="progress-thumb" style="left: 13px; --task-color: #818CF8;"></div>
-                   <div class="resize-handle right" data-role="resize-right"></div></div></td></tr><tr class="task-row" data-task-id="task-103"><td class="handle-cell"><div class="task-grip"><svg width="10" height="14" viewBox="0 0 10 14" fill="currentColor"><circle cx="3" cy="2.5" r="1.2"></circle><circle cx="7" cy="2.5" r="1.2"></circle><circle cx="3" cy="7" r="1.2"></circle><circle cx="7" cy="7" r="1.2"></circle><circle cx="3" cy="11.5" r="1.2"></circle><circle cx="7" cy="11.5" r="1.2"></circle></svg></div></td><td class="task-name-cell"><div class="task-name-wrap"><div class="task-name-text" contenteditable="false" spellcheck="false" data-fmt="rich" title="Click to edit task name">Enable a customization model, define what should be customizable without affecting clarity &amp; baseline metrics</div><div class="domain-badge is-unassigned">+</div><button class="task-open-btn" title="Open task detail"><svg width="14" height="14" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2H2a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V7"></path><polyline points="8,1 11,1 11,4"></polyline><line x1="5.5" y1="6.5" x2="11" y2="1"></line></svg></button><button class="task-menu-btn" title="Task options">···</button></div></td><td class="progress-col-cell"><div class="progress-circle-wrap" data-task-id="task-103">
+                   <div class="resize-handle right" data-role="resize-right"></div></div></td></tr><tr class="task-row" data-task-id="i1d"><td class="handle-cell"><div class="task-grip"><svg width="10" height="14" viewBox="0 0 10 14" fill="currentColor"><circle cx="3" cy="2.5" r="1.2"></circle><circle cx="7" cy="2.5" r="1.2"></circle><circle cx="3" cy="7" r="1.2"></circle><circle cx="7" cy="7" r="1.2"></circle><circle cx="3" cy="11.5" r="1.2"></circle><circle cx="7" cy="11.5" r="1.2"></circle></svg></div></td><td class="task-name-cell"><div class="task-name-wrap"><div class="task-name-text" contenteditable="false" spellcheck="false" data-fmt="rich" title="Click to edit task name">Baseline metrics: task completion, time-to-configure, tickets</div><div class="domain-badge is-unassigned">+</div><button class="task-open-btn" title="Open task detail"><svg width="14" height="14" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2H2a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V7"></path><polyline points="8,1 11,1 11,4"></polyline><line x1="5.5" y1="6.5" x2="11" y2="1"></line></svg></button><button class="task-menu-btn" title="Task options">···</button></div></td><td class="progress-col-cell"><div class="progress-circle-wrap" data-task-id="i1d">
     <svg width="30" height="30" viewBox="0 0 30 30" class="prog-svg">
       <circle cx="15" cy="15" r="10" fill="none" stroke="#E8ECF1" stroke-width="5.5"></circle>
       <circle cx="15" cy="15" r="10" fill="none" stroke="#CBD5E1" stroke-width="5.5" stroke-dasharray="0.00 62.83" stroke-linecap="round" transform="rotate(-90 15 15)" class="prog-arc"></circle>
     </svg>
-    <span class="prog-pct">0%</span></div></td><td class="task-team-cell"><input type="text" class="team-input" placeholder="Add owner…"></td><td colspan="6" class="gantt-cell" data-task-id="task-103"><div class="gantt-bg"><div class="gantt-band" style="flex: 1 1 0%; background: rgb(241, 245, 249);"></div><div class="gantt-band" style="flex: 4 1 0%; background: rgb(245, 243, 240);"></div><div class="gantt-band" style="flex: 1 1 0%; background: rgb(253, 248, 244);"></div></div><div class="gantt-grid" style="grid-template-columns: repeat(6, 1fr);"><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div></div><div class="task-bar" data-task-id="task-103" style="left: 0%; width: 16.6667%; background: linear-gradient(rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.09) 100%), rgb(203, 213, 225);"><div class="resize-handle left" data-role="resize-left"></div>
-                   <div class="bar-label" style="color: rgba(0, 0, 0, 0.88);">Enable a customization model,…</div>
+    <span class="prog-pct">0%</span></div></td><td class="task-team-cell"><input type="text" class="team-input" placeholder="Add owner…"></td><td colspan="6" class="gantt-cell" data-task-id="i1d"><div class="gantt-bg"><div class="gantt-band" style="flex: 1 1 0%; background: rgb(241, 245, 249);"></div><div class="gantt-band" style="flex: 4 1 0%; background: rgb(253, 248, 244);"></div><div class="gantt-band" style="flex: 1 1 0%; background: rgb(245, 243, 240);"></div></div><div class="gantt-grid" style="grid-template-columns: repeat(6, 1fr);"><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div></div><div class="task-bar" data-task-id="i1d" style="left: 0%; width: 50%; background: linear-gradient(rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.09) 100%), rgb(203, 213, 225);"><div class="resize-handle left" data-role="resize-left"></div>
+                   <div class="bar-label" style="color: rgba(0, 0, 0, 0.88);">Baseline metrics: task completion,…</div>
                    <div class="bar-pct" style="color: rgba(0, 0, 0, 0.88);"></div>
                    <div class="bar-progress-thumb" data-role="progress-thumb" style="left: 13px; --task-color: #818CF8;"></div>
-                   <div class="resize-handle right" data-role="resize-right"></div></div></td></tr><tr class="task-row" data-task-id="task-104"><td class="handle-cell"><div class="task-grip"><svg width="10" height="14" viewBox="0 0 10 14" fill="currentColor"><circle cx="3" cy="2.5" r="1.2"></circle><circle cx="7" cy="2.5" r="1.2"></circle><circle cx="3" cy="7" r="1.2"></circle><circle cx="7" cy="7" r="1.2"></circle><circle cx="3" cy="11.5" r="1.2"></circle><circle cx="7" cy="11.5" r="1.2"></circle></svg></div></td><td class="task-name-cell"><div class="task-name-wrap"><div class="task-name-text" contenteditable="false" spellcheck="false" data-fmt="rich" title="Click to edit task name">Streamline settings architecture</div><div class="domain-badge is-unassigned">+</div><button class="task-open-btn" title="Open task detail"><svg width="14" height="14" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2H2a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V7"></path><polyline points="8,1 11,1 11,4"></polyline><line x1="5.5" y1="6.5" x2="11" y2="1"></line></svg></button><button class="task-menu-btn" title="Task options">···</button></div></td><td class="progress-col-cell"><div class="progress-circle-wrap" data-task-id="task-104">
+                   <div class="resize-handle right" data-role="resize-right"></div></div></td></tr><tr class="task-row" data-task-id="i1e"><td class="handle-cell"><div class="task-grip"><svg width="10" height="14" viewBox="0 0 10 14" fill="currentColor"><circle cx="3" cy="2.5" r="1.2"></circle><circle cx="7" cy="2.5" r="1.2"></circle><circle cx="3" cy="7" r="1.2"></circle><circle cx="7" cy="7" r="1.2"></circle><circle cx="3" cy="11.5" r="1.2"></circle><circle cx="7" cy="11.5" r="1.2"></circle></svg></div></td><td class="task-name-cell"><div class="task-name-wrap"><div class="task-name-text" contenteditable="false" spellcheck="false" data-fmt="rich" title="Click to edit task name">Restructure side nav around merchant workflows, not features</div><div class="domain-badge is-unassigned">+</div><button class="task-open-btn" title="Open task detail"><svg width="14" height="14" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2H2a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V7"></path><polyline points="8,1 11,1 11,4"></polyline><line x1="5.5" y1="6.5" x2="11" y2="1"></line></svg></button><button class="task-menu-btn" title="Task options">···</button></div></td><td class="progress-col-cell"><div class="progress-circle-wrap" data-task-id="i1e">
     <svg width="30" height="30" viewBox="0 0 30 30" class="prog-svg">
       <circle cx="15" cy="15" r="10" fill="none" stroke="#E8ECF1" stroke-width="5.5"></circle>
       <circle cx="15" cy="15" r="10" fill="none" stroke="#CBD5E1" stroke-width="5.5" stroke-dasharray="0.00 62.83" stroke-linecap="round" transform="rotate(-90 15 15)" class="prog-arc"></circle>
     </svg>
-    <span class="prog-pct">0%</span></div></td><td class="task-team-cell"><input type="text" class="team-input" placeholder="Add owner…"></td><td colspan="6" class="gantt-cell" data-task-id="task-104"><div class="gantt-bg"><div class="gantt-band" style="flex: 1 1 0%; background: rgb(241, 245, 249);"></div><div class="gantt-band" style="flex: 4 1 0%; background: rgb(245, 243, 240);"></div><div class="gantt-band" style="flex: 1 1 0%; background: rgb(253, 248, 244);"></div></div><div class="gantt-grid" style="grid-template-columns: repeat(6, 1fr);"><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div></div><div class="task-bar" data-task-id="task-104" style="left: 0%; width: 16.6667%; background: linear-gradient(rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.09) 100%), rgb(203, 213, 225);"><div class="resize-handle left" data-role="resize-left"></div>
-                   <div class="bar-label" style="color: rgba(0, 0, 0, 0.88);">Streamline settings architecture</div>
+    <span class="prog-pct">0%</span></div></td><td class="task-team-cell"><input type="text" class="team-input" placeholder="Add owner…"></td><td colspan="6" class="gantt-cell" data-task-id="i1e"><div class="gantt-bg"><div class="gantt-band" style="flex: 1 1 0%; background: rgb(241, 245, 249);"></div><div class="gantt-band" style="flex: 4 1 0%; background: rgb(253, 248, 244);"></div><div class="gantt-band" style="flex: 1 1 0%; background: rgb(245, 243, 240);"></div></div><div class="gantt-grid" style="grid-template-columns: repeat(6, 1fr);"><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div></div><div class="task-bar" data-task-id="i1e" style="left: 33.3333%; width: 66.6667%; background: linear-gradient(rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.09) 100%), rgb(203, 213, 225);"><div class="resize-handle left" data-role="resize-left"></div>
+                   <div class="bar-label" style="color: rgba(0, 0, 0, 0.88);">Restructure side nav around…</div>
                    <div class="bar-pct" style="color: rgba(0, 0, 0, 0.88);"></div>
                    <div class="bar-progress-thumb" data-role="progress-thumb" style="left: 13px; --task-color: #818CF8;"></div>
-                   <div class="resize-handle right" data-role="resize-right"></div></div></td></tr><tr class="task-row" data-task-id="task-107"><td class="handle-cell"><div class="task-grip"><svg width="10" height="14" viewBox="0 0 10 14" fill="currentColor"><circle cx="3" cy="2.5" r="1.2"></circle><circle cx="7" cy="2.5" r="1.2"></circle><circle cx="3" cy="7" r="1.2"></circle><circle cx="7" cy="7" r="1.2"></circle><circle cx="3" cy="11.5" r="1.2"></circle><circle cx="7" cy="11.5" r="1.2"></circle></svg></div></td><td class="task-name-cell"><div class="task-name-wrap"><div class="task-name-text" contenteditable="false" spellcheck="false" data-fmt="rich" title="Click to edit task name">Create prototype with future state vision: simplified side nav, landing pages, and mobile patterns</div><div class="domain-badge is-unassigned">+</div><button class="task-open-btn" title="Open task detail"><svg width="14" height="14" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2H2a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V7"></path><polyline points="8,1 11,1 11,4"></polyline><line x1="5.5" y1="6.5" x2="11" y2="1"></line></svg></button><button class="task-menu-btn" title="Task options">···</button></div></td><td class="progress-col-cell"><div class="progress-circle-wrap" data-task-id="task-107">
+                   <div class="resize-handle right" data-role="resize-right"></div></div></td></tr><tr class="task-row" data-task-id="i1f"><td class="handle-cell"><div class="task-grip"><svg width="10" height="14" viewBox="0 0 10 14" fill="currentColor"><circle cx="3" cy="2.5" r="1.2"></circle><circle cx="7" cy="2.5" r="1.2"></circle><circle cx="3" cy="7" r="1.2"></circle><circle cx="7" cy="7" r="1.2"></circle><circle cx="3" cy="11.5" r="1.2"></circle><circle cx="7" cy="11.5" r="1.2"></circle></svg></div></td><td class="task-name-cell"><div class="task-name-wrap"><div class="task-name-text" contenteditable="false" spellcheck="false" data-fmt="rich" title="Click to edit task name">Homepage redesign: action-oriented and merchant-type aware</div><div class="domain-badge is-unassigned">+</div><button class="task-open-btn" title="Open task detail"><svg width="14" height="14" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2H2a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V7"></path><polyline points="8,1 11,1 11,4"></polyline><line x1="5.5" y1="6.5" x2="11" y2="1"></line></svg></button><button class="task-menu-btn" title="Task options">···</button></div></td><td class="progress-col-cell"><div class="progress-circle-wrap" data-task-id="i1f">
     <svg width="30" height="30" viewBox="0 0 30 30" class="prog-svg">
       <circle cx="15" cy="15" r="10" fill="none" stroke="#E8ECF1" stroke-width="5.5"></circle>
       <circle cx="15" cy="15" r="10" fill="none" stroke="#CBD5E1" stroke-width="5.5" stroke-dasharray="0.00 62.83" stroke-linecap="round" transform="rotate(-90 15 15)" class="prog-arc"></circle>
     </svg>
-    <span class="prog-pct">0%</span></div></td><td class="task-team-cell"><input type="text" class="team-input" placeholder="Add owner…"></td><td colspan="6" class="gantt-cell" data-task-id="task-107"><div class="gantt-bg"><div class="gantt-band" style="flex: 1 1 0%; background: rgb(241, 245, 249);"></div><div class="gantt-band" style="flex: 4 1 0%; background: rgb(245, 243, 240);"></div><div class="gantt-band" style="flex: 1 1 0%; background: rgb(253, 248, 244);"></div></div><div class="gantt-grid" style="grid-template-columns: repeat(6, 1fr);"><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div></div><div class="task-bar" data-task-id="task-107" style="left: 0%; width: 16.6667%; background: linear-gradient(rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.09) 100%), rgb(203, 213, 225);"><div class="resize-handle left" data-role="resize-left"></div>
-                   <div class="bar-label" style="color: rgba(0, 0, 0, 0.88);">Create prototype with future…</div>
+    <span class="prog-pct">0%</span></div></td><td class="task-team-cell"><input type="text" class="team-input" placeholder="Add owner…"></td><td colspan="6" class="gantt-cell" data-task-id="i1f"><div class="gantt-bg"><div class="gantt-band" style="flex: 1 1 0%; background: rgb(241, 245, 249);"></div><div class="gantt-band" style="flex: 4 1 0%; background: rgb(253, 248, 244);"></div><div class="gantt-band" style="flex: 1 1 0%; background: rgb(245, 243, 240);"></div></div><div class="gantt-grid" style="grid-template-columns: repeat(6, 1fr);"><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div></div><div class="task-bar" data-task-id="i1f" style="left: 33.3333%; width: 66.6667%; background: linear-gradient(rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.09) 100%), rgb(203, 213, 225);"><div class="resize-handle left" data-role="resize-left"></div>
+                   <div class="bar-label" style="color: rgba(0, 0, 0, 0.88);">Homepage redesign: action-oriented and…</div>
                    <div class="bar-pct" style="color: rgba(0, 0, 0, 0.88);"></div>
                    <div class="bar-progress-thumb" data-role="progress-thumb" style="left: 13px; --task-color: #818CF8;"></div>
-                   <div class="resize-handle right" data-role="resize-right"></div></div></td></tr></tbody><tbody class="init-group" id="group-init-1774624505998" data-init-id="init-1774624505998"><tr class="init-row"><td class="handle-cell" title="Drag to reorder" style="background: rgb(213, 246, 242);"><div class="priority-badge" title="Click for options · Drag to reorder" style="background: rgb(45, 212, 191);">02</div></td><td class="label-cell" colspan="3" style="border-right: 1px solid rgb(226, 232, 240); background: rgb(213, 246, 242);"><div class="label-inner"><span class="init-caret"><svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="2,4 6,8 10,4"></polyline></svg></span><span class="init-label-text" contenteditable="true" spellcheck="false" data-fmt="bold-only" style="color: rgba(0, 0, 0, 0.9);">STRATEGY</span></div></td><td colspan="6" class="gantt-cell" style="background: rgb(213, 246, 242); border-left: none;"></td></tr><tr class="task-row" data-task-id="task-101"><td class="handle-cell"><div class="task-grip"><svg width="10" height="14" viewBox="0 0 10 14" fill="currentColor"><circle cx="3" cy="2.5" r="1.2"></circle><circle cx="7" cy="2.5" r="1.2"></circle><circle cx="3" cy="7" r="1.2"></circle><circle cx="7" cy="7" r="1.2"></circle><circle cx="3" cy="11.5" r="1.2"></circle><circle cx="7" cy="11.5" r="1.2"></circle></svg></div></td><td class="task-name-cell"><div class="task-name-wrap"><div class="task-name-text" contenteditable="false" spellcheck="false" data-fmt="rich" title="Click to edit task name">Define&nbsp;Dashboard Identity - draft identity statement for stakeholder review</div><div class="domain-badge is-unassigned">+</div><button class="task-open-btn" title="Open task detail"><svg width="14" height="14" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2H2a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V7"></path><polyline points="8,1 11,1 11,4"></polyline><line x1="5.5" y1="6.5" x2="11" y2="1"></line></svg></button><button class="task-menu-btn" title="Task options">···</button></div></td><td class="progress-col-cell"><div class="progress-circle-wrap" data-task-id="task-101">
-    <svg width="30" height="30" viewBox="0 0 30 30" class="prog-svg">
-      <circle cx="15" cy="15" r="10" fill="none" stroke="#E8ECF1" stroke-width="5.5"></circle>
-      <circle cx="15" cy="15" r="10" fill="none" stroke="#2DD4BF" stroke-width="5.5" stroke-dasharray="22.62 62.83" stroke-linecap="round" transform="rotate(-90 15 15)" class="prog-arc"></circle>
-    </svg>
-    <span class="prog-pct">36%</span></div></td><td class="task-team-cell"><input type="text" class="team-input" placeholder="Add owner…"></td><td colspan="6" class="gantt-cell" data-task-id="task-101"><div class="gantt-bg"><div class="gantt-band" style="flex: 1 1 0%; background: rgb(241, 245, 249);"></div><div class="gantt-band" style="flex: 4 1 0%; background: rgb(245, 243, 240);"></div><div class="gantt-band" style="flex: 1 1 0%; background: rgb(253, 248, 244);"></div></div><div class="gantt-grid" style="grid-template-columns: repeat(6, 1fr);"><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div></div><div class="task-bar bar-has-progress" data-task-id="task-101" style="left: 0%; width: 16.6667%; background: linear-gradient(rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.09) 100%), linear-gradient(to right, rgb(45, 212, 191) 36%, rgb(203, 213, 225) 36%);"><div class="resize-handle left" data-role="resize-left"></div>
-                   <div class="bar-label" style="color: rgba(0, 0, 0, 0.88);">Define&nbsp;Dashboard Identity - draft…</div>
-                   <div class="bar-pct" style="color: rgba(0, 0, 0, 0.88);">36%</div>
-                   <div class="bar-progress-thumb" data-role="progress-thumb" style="left: 36%; --task-color: #2DD4BF;"></div>
-                   <div class="resize-handle right" data-role="resize-right"></div></div></td></tr><tr class="task-row" data-task-id="task-102"><td class="handle-cell"><div class="task-grip"><svg width="10" height="14" viewBox="0 0 10 14" fill="currentColor"><circle cx="3" cy="2.5" r="1.2"></circle><circle cx="7" cy="2.5" r="1.2"></circle><circle cx="3" cy="7" r="1.2"></circle><circle cx="7" cy="7" r="1.2"></circle><circle cx="3" cy="11.5" r="1.2"></circle><circle cx="7" cy="11.5" r="1.2"></circle></svg></div></td><td class="task-name-cell"><div class="task-name-wrap"><div class="task-name-text" contenteditable="false" spellcheck="false" data-fmt="rich" title="Click to edit task name">Design business-oriented funnels and landing pages, clearer pathways into core areas, and priority JTBD</div><div class="domain-badge is-unassigned">+</div><button class="task-open-btn" title="Open task detail"><svg width="14" height="14" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2H2a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V7"></path><polyline points="8,1 11,1 11,4"></polyline><line x1="5.5" y1="6.5" x2="11" y2="1"></line></svg></button><button class="task-menu-btn" title="Task options">···</button></div></td><td class="progress-col-cell"><div class="progress-circle-wrap" data-task-id="task-102">
-    <svg width="30" height="30" viewBox="0 0 30 30" class="prog-svg">
-      <circle cx="15" cy="15" r="10" fill="none" stroke="#E8ECF1" stroke-width="5.5"></circle>
-      <circle cx="15" cy="15" r="10" fill="none" stroke="#2DD4BF" stroke-width="5.5" stroke-dasharray="30.16 62.83" stroke-linecap="round" transform="rotate(-90 15 15)" class="prog-arc"></circle>
-    </svg>
-    <span class="prog-pct">48%</span></div></td><td class="task-team-cell"><input type="text" class="team-input" placeholder="Add owner…"></td><td colspan="6" class="gantt-cell" data-task-id="task-102"><div class="gantt-bg"><div class="gantt-band" style="flex: 1 1 0%; background: rgb(241, 245, 249);"></div><div class="gantt-band" style="flex: 4 1 0%; background: rgb(245, 243, 240);"></div><div class="gantt-band" style="flex: 1 1 0%; background: rgb(253, 248, 244);"></div></div><div class="gantt-grid" style="grid-template-columns: repeat(6, 1fr);"><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div></div><div class="task-bar bar-has-progress" data-task-id="task-102" style="left: 0%; width: 16.6667%; background: linear-gradient(rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.09) 100%), linear-gradient(to right, rgb(45, 212, 191) 48%, rgb(203, 213, 225) 48%);"><div class="resize-handle left" data-role="resize-left"></div>
-                   <div class="bar-label" style="color: rgba(0, 0, 0, 0.88);">Design business-oriented funnels and…</div>
-                   <div class="bar-pct" style="color: rgba(0, 0, 0, 0.88);">48%</div>
-                   <div class="bar-progress-thumb" data-role="progress-thumb" style="left: 48%; --task-color: #2DD4BF;"></div>
-                   <div class="resize-handle right" data-role="resize-right"></div></div></td></tr><tr class="task-row" data-task-id="task-103"><td class="handle-cell"><div class="task-grip"><svg width="10" height="14" viewBox="0 0 10 14" fill="currentColor"><circle cx="3" cy="2.5" r="1.2"></circle><circle cx="7" cy="2.5" r="1.2"></circle><circle cx="3" cy="7" r="1.2"></circle><circle cx="7" cy="7" r="1.2"></circle><circle cx="3" cy="11.5" r="1.2"></circle><circle cx="7" cy="11.5" r="1.2"></circle></svg></div></td><td class="task-name-cell"><div class="task-name-wrap"><div class="task-name-text" contenteditable="false" spellcheck="false" data-fmt="rich" title="Click to edit task name">New task — click to rename</div><div class="domain-badge is-unassigned">+</div><button class="task-open-btn" title="Open task detail"><svg width="14" height="14" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2H2a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V7"></path><polyline points="8,1 11,1 11,4"></polyline><line x1="5.5" y1="6.5" x2="11" y2="1"></line></svg></button><button class="task-menu-btn" title="Task options">···</button></div></td><td class="progress-col-cell"><div class="progress-circle-wrap" data-task-id="task-103">
+                   <div class="resize-handle right" data-role="resize-right"></div></div></td></tr><tr class="task-row" data-task-id="i1g"><td class="handle-cell"><div class="task-grip"><svg width="10" height="14" viewBox="0 0 10 14" fill="currentColor"><circle cx="3" cy="2.5" r="1.2"></circle><circle cx="7" cy="2.5" r="1.2"></circle><circle cx="3" cy="7" r="1.2"></circle><circle cx="7" cy="7" r="1.2"></circle><circle cx="3" cy="11.5" r="1.2"></circle><circle cx="7" cy="11.5" r="1.2"></circle></svg></div></td><td class="task-name-cell"><div class="task-name-wrap"><div class="task-name-text" contenteditable="false" spellcheck="false" data-fmt="rich" title="Click to edit task name">Ship global search as a quick win — generates navigation data</div><div class="domain-badge is-unassigned">+</div><button class="task-open-btn" title="Open task detail"><svg width="14" height="14" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2H2a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V7"></path><polyline points="8,1 11,1 11,4"></polyline><line x1="5.5" y1="6.5" x2="11" y2="1"></line></svg></button><button class="task-menu-btn" title="Task options">···</button></div></td><td class="progress-col-cell"><div class="progress-circle-wrap" data-task-id="i1g">
     <svg width="30" height="30" viewBox="0 0 30 30" class="prog-svg">
       <circle cx="15" cy="15" r="10" fill="none" stroke="#E8ECF1" stroke-width="5.5"></circle>
       <circle cx="15" cy="15" r="10" fill="none" stroke="#CBD5E1" stroke-width="5.5" stroke-dasharray="0.00 62.83" stroke-linecap="round" transform="rotate(-90 15 15)" class="prog-arc"></circle>
     </svg>
-    <span class="prog-pct">0%</span></div></td><td class="task-team-cell"><input type="text" class="team-input" placeholder="Add owner…"></td><td colspan="6" class="gantt-cell" data-task-id="task-103"><div class="gantt-bg"><div class="gantt-band" style="flex: 1 1 0%; background: rgb(241, 245, 249);"></div><div class="gantt-band" style="flex: 4 1 0%; background: rgb(245, 243, 240);"></div><div class="gantt-band" style="flex: 1 1 0%; background: rgb(253, 248, 244);"></div></div><div class="gantt-grid" style="grid-template-columns: repeat(6, 1fr);"><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div></div><div class="task-bar" data-task-id="task-103" style="left: 0%; width: 16.6667%; background: linear-gradient(rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.09) 100%), rgb(203, 213, 225);"><div class="resize-handle left" data-role="resize-left"></div>
-                   <div class="bar-label" style="color: rgba(0, 0, 0, 0.88);">New task — click…</div>
+    <span class="prog-pct">0%</span></div></td><td class="task-team-cell"><input type="text" class="team-input" placeholder="Add owner…"></td><td colspan="6" class="gantt-cell" data-task-id="i1g"><div class="gantt-bg"><div class="gantt-band" style="flex: 1 1 0%; background: rgb(241, 245, 249);"></div><div class="gantt-band" style="flex: 4 1 0%; background: rgb(253, 248, 244);"></div><div class="gantt-band" style="flex: 1 1 0%; background: rgb(245, 243, 240);"></div></div><div class="gantt-grid" style="grid-template-columns: repeat(6, 1fr);"><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div></div><div class="task-bar" data-task-id="i1g" style="left: 50%; width: 50%; background: linear-gradient(rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.09) 100%), rgb(203, 213, 225);"><div class="resize-handle left" data-role="resize-left"></div>
+                   <div class="bar-label" style="color: rgba(0, 0, 0, 0.88);">Ship global search as…</div>
+                   <div class="bar-pct" style="color: rgba(0, 0, 0, 0.88);"></div>
+                   <div class="bar-progress-thumb" data-role="progress-thumb" style="left: 13px; --task-color: #818CF8;"></div>
+                   <div class="resize-handle right" data-role="resize-right"></div></div></td></tr><tr class="task-row" data-task-id="i1h"><td class="handle-cell"><div class="task-grip"><svg width="10" height="14" viewBox="0 0 10 14" fill="currentColor"><circle cx="3" cy="2.5" r="1.2"></circle><circle cx="7" cy="2.5" r="1.2"></circle><circle cx="3" cy="7" r="1.2"></circle><circle cx="7" cy="7" r="1.2"></circle><circle cx="3" cy="11.5" r="1.2"></circle><circle cx="7" cy="11.5" r="1.2"></circle></svg></div></td><td class="task-name-cell"><div class="task-name-wrap"><div class="task-name-text" contenteditable="false" spellcheck="false" data-fmt="rich" title="Click to edit task name">Feature discovery: onboarding, announcements, empty states</div><div class="domain-badge is-unassigned">+</div><button class="task-open-btn" title="Open task detail"><svg width="14" height="14" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2H2a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V7"></path><polyline points="8,1 11,1 11,4"></polyline><line x1="5.5" y1="6.5" x2="11" y2="1"></line></svg></button><button class="task-menu-btn" title="Task options">···</button></div></td><td class="progress-col-cell"><div class="progress-circle-wrap" data-task-id="i1h">
+    <svg width="30" height="30" viewBox="0 0 30 30" class="prog-svg">
+      <circle cx="15" cy="15" r="10" fill="none" stroke="#E8ECF1" stroke-width="5.5"></circle>
+      <circle cx="15" cy="15" r="10" fill="none" stroke="#CBD5E1" stroke-width="5.5" stroke-dasharray="0.00 62.83" stroke-linecap="round" transform="rotate(-90 15 15)" class="prog-arc"></circle>
+    </svg>
+    <span class="prog-pct">0%</span></div></td><td class="task-team-cell"><input type="text" class="team-input" placeholder="Add owner…"></td><td colspan="6" class="gantt-cell" data-task-id="i1h"><div class="gantt-bg"><div class="gantt-band" style="flex: 1 1 0%; background: rgb(241, 245, 249);"></div><div class="gantt-band" style="flex: 4 1 0%; background: rgb(253, 248, 244);"></div><div class="gantt-band" style="flex: 1 1 0%; background: rgb(245, 243, 240);"></div></div><div class="gantt-grid" style="grid-template-columns: repeat(6, 1fr);"><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div></div><div class="task-bar" data-task-id="i1h" style="left: 83.3333%; width: 16.6667%; background: linear-gradient(rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.09) 100%), rgb(203, 213, 225);"><div class="resize-handle left" data-role="resize-left"></div>
+                   <div class="bar-label" style="color: rgba(0, 0, 0, 0.88);">Feature discovery: onboarding, announcements,…</div>
+                   <div class="bar-pct" style="color: rgba(0, 0, 0, 0.88);"></div>
+                   <div class="bar-progress-thumb" data-role="progress-thumb" style="left: 13px; --task-color: #818CF8;"></div>
+                   <div class="resize-handle right" data-role="resize-right"></div></div></td></tr><tr class="task-row" data-task-id="i1i"><td class="handle-cell"><div class="task-grip"><svg width="10" height="14" viewBox="0 0 10 14" fill="currentColor"><circle cx="3" cy="2.5" r="1.2"></circle><circle cx="7" cy="2.5" r="1.2"></circle><circle cx="3" cy="7" r="1.2"></circle><circle cx="7" cy="7" r="1.2"></circle><circle cx="3" cy="11.5" r="1.2"></circle><circle cx="7" cy="11.5" r="1.2"></circle></svg></div></td><td class="task-name-cell"><div class="task-name-wrap"><div class="task-name-text" contenteditable="false" spellcheck="false" data-fmt="rich" title="Click to edit task name">Custom views for reporting — reduce 1-off report requests</div><div class="domain-badge is-unassigned">+</div><button class="task-open-btn" title="Open task detail"><svg width="14" height="14" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2H2a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V7"></path><polyline points="8,1 11,1 11,4"></polyline><line x1="5.5" y1="6.5" x2="11" y2="1"></line></svg></button><button class="task-menu-btn" title="Task options">···</button></div></td><td class="progress-col-cell"><div class="progress-circle-wrap" data-task-id="i1i">
+    <svg width="30" height="30" viewBox="0 0 30 30" class="prog-svg">
+      <circle cx="15" cy="15" r="10" fill="none" stroke="#E8ECF1" stroke-width="5.5"></circle>
+      <circle cx="15" cy="15" r="10" fill="none" stroke="#CBD5E1" stroke-width="5.5" stroke-dasharray="0.00 62.83" stroke-linecap="round" transform="rotate(-90 15 15)" class="prog-arc"></circle>
+    </svg>
+    <span class="prog-pct">0%</span></div></td><td class="task-team-cell"><input type="text" class="team-input" placeholder="Add owner…"></td><td colspan="6" class="gantt-cell" data-task-id="i1i"><div class="gantt-bg"><div class="gantt-band" style="flex: 1 1 0%; background: rgb(241, 245, 249);"></div><div class="gantt-band" style="flex: 4 1 0%; background: rgb(253, 248, 244);"></div><div class="gantt-band" style="flex: 1 1 0%; background: rgb(245, 243, 240);"></div></div><div class="gantt-grid" style="grid-template-columns: repeat(6, 1fr);"><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div></div><div class="task-bar" data-task-id="i1i" style="left: 83.3333%; width: 16.6667%; background: linear-gradient(rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.09) 100%), rgb(203, 213, 225);"><div class="resize-handle left" data-role="resize-left"></div>
+                   <div class="bar-label" style="color: rgba(0, 0, 0, 0.88);">Custom views for reporting…</div>
+                   <div class="bar-pct" style="color: rgba(0, 0, 0, 0.88);"></div>
+                   <div class="bar-progress-thumb" data-role="progress-thumb" style="left: 13px; --task-color: #818CF8;"></div>
+                   <div class="resize-handle right" data-role="resize-right"></div></div></td></tr><tr class="task-row" data-task-id="i1j"><td class="handle-cell"><div class="task-grip"><svg width="10" height="14" viewBox="0 0 10 14" fill="currentColor"><circle cx="3" cy="2.5" r="1.2"></circle><circle cx="7" cy="2.5" r="1.2"></circle><circle cx="3" cy="7" r="1.2"></circle><circle cx="7" cy="7" r="1.2"></circle><circle cx="3" cy="11.5" r="1.2"></circle><circle cx="7" cy="11.5" r="1.2"></circle></svg></div></td><td class="task-name-cell"><div class="task-name-wrap"><div class="task-name-text" contenteditable="false" spellcheck="false" data-fmt="rich" title="Click to edit task name">Identify domain initiatives needing Dashboard Experience review</div><div class="domain-badge is-unassigned">+</div><button class="task-open-btn" title="Open task detail"><svg width="14" height="14" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2H2a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V7"></path><polyline points="8,1 11,1 11,4"></polyline><line x1="5.5" y1="6.5" x2="11" y2="1"></line></svg></button><button class="task-menu-btn" title="Task options">···</button></div></td><td class="progress-col-cell"><div class="progress-circle-wrap" data-task-id="i1j">
+    <svg width="30" height="30" viewBox="0 0 30 30" class="prog-svg">
+      <circle cx="15" cy="15" r="10" fill="none" stroke="#E8ECF1" stroke-width="5.5"></circle>
+      <circle cx="15" cy="15" r="10" fill="none" stroke="#CBD5E1" stroke-width="5.5" stroke-dasharray="0.00 62.83" stroke-linecap="round" transform="rotate(-90 15 15)" class="prog-arc"></circle>
+    </svg>
+    <span class="prog-pct">0%</span></div></td><td class="task-team-cell"><input type="text" class="team-input" placeholder="Add owner…"></td><td colspan="6" class="gantt-cell" data-task-id="i1j"><div class="gantt-bg"><div class="gantt-band" style="flex: 1 1 0%; background: rgb(241, 245, 249);"></div><div class="gantt-band" style="flex: 4 1 0%; background: rgb(253, 248, 244);"></div><div class="gantt-band" style="flex: 1 1 0%; background: rgb(245, 243, 240);"></div></div><div class="gantt-grid" style="grid-template-columns: repeat(6, 1fr);"><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div></div><div class="task-bar" data-task-id="i1j" style="left: 83.3333%; width: 16.6667%; background: linear-gradient(rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.09) 100%), rgb(203, 213, 225);"><div class="resize-handle left" data-role="resize-left"></div>
+                   <div class="bar-label" style="color: rgba(0, 0, 0, 0.88);">Identify domain initiatives needing…</div>
+                   <div class="bar-pct" style="color: rgba(0, 0, 0, 0.88);"></div>
+                   <div class="bar-progress-thumb" data-role="progress-thumb" style="left: 13px; --task-color: #818CF8;"></div>
+                   <div class="resize-handle right" data-role="resize-right"></div></div></td></tr><tr class="task-row" data-task-id="i1c"><td class="handle-cell"><div class="task-grip"><svg width="10" height="14" viewBox="0 0 10 14" fill="currentColor"><circle cx="3" cy="2.5" r="1.2"></circle><circle cx="7" cy="2.5" r="1.2"></circle><circle cx="3" cy="7" r="1.2"></circle><circle cx="7" cy="7" r="1.2"></circle><circle cx="3" cy="11.5" r="1.2"></circle><circle cx="7" cy="11.5" r="1.2"></circle></svg></div></td><td class="task-name-cell"><div class="task-name-wrap"><div class="task-name-text" contenteditable="false" spellcheck="false" data-fmt="rich" title="Click to edit task name">Stand up cross-functional team: design, PM, eng, data, support</div><div class="domain-badge is-unassigned">+</div><button class="task-open-btn" title="Open task detail"><svg width="14" height="14" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2H2a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V7"></path><polyline points="8,1 11,1 11,4"></polyline><line x1="5.5" y1="6.5" x2="11" y2="1"></line></svg></button><button class="task-menu-btn" title="Task options">···</button></div></td><td class="progress-col-cell"><div class="progress-circle-wrap" data-task-id="i1c">
+    <svg width="30" height="30" viewBox="0 0 30 30" class="prog-svg">
+      <circle cx="15" cy="15" r="10" fill="none" stroke="#E8ECF1" stroke-width="5.5"></circle>
+      <circle cx="15" cy="15" r="10" fill="none" stroke="#CBD5E1" stroke-width="5.5" stroke-dasharray="0.00 62.83" stroke-linecap="round" transform="rotate(-90 15 15)" class="prog-arc"></circle>
+    </svg>
+    <span class="prog-pct">0%</span></div></td><td class="task-team-cell"><input type="text" class="team-input" placeholder="Add owner…"></td><td colspan="6" class="gantt-cell" data-task-id="i1c"><div class="gantt-bg"><div class="gantt-band" style="flex: 1 1 0%; background: rgb(241, 245, 249);"></div><div class="gantt-band" style="flex: 4 1 0%; background: rgb(253, 248, 244);"></div><div class="gantt-band" style="flex: 1 1 0%; background: rgb(245, 243, 240);"></div></div><div class="gantt-grid" style="grid-template-columns: repeat(6, 1fr);"><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div></div><div class="task-bar" data-task-id="i1c" style="left: 0%; width: 33.3333%; background: linear-gradient(rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.09) 100%), rgb(203, 213, 225);"><div class="resize-handle left" data-role="resize-left"></div>
+                   <div class="bar-label" style="color: rgba(0, 0, 0, 0.88);">Stand up cross-functional team:…</div>
+                   <div class="bar-pct" style="color: rgba(0, 0, 0, 0.88);"></div>
+                   <div class="bar-progress-thumb" data-role="progress-thumb" style="left: 13px; --task-color: #818CF8;"></div>
+                   <div class="resize-handle right" data-role="resize-right"></div></div></td></tr></tbody><tbody class="init-group" id="group-init2" data-init-id="init2"><tr class="init-row"><td class="handle-cell" title="Drag to reorder" style="background: rgb(213, 246, 242);"><div class="priority-badge" title="Click for options · Drag to reorder" style="background: rgb(45, 212, 191);">02</div></td><td class="label-cell" colspan="3" style="border-right: 1px solid rgb(226, 232, 240); background: rgb(213, 246, 242);"><div class="label-inner"><span class="init-caret"><svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="2,4 6,8 10,4"></polyline></svg></span><span class="init-label-text" contenteditable="true" spellcheck="false" data-fmt="bold-only" style="color: rgba(0, 0, 0, 0.9);">MERCHANT MODEL</span></div></td><td colspan="6" class="gantt-cell" style="background: rgb(213, 246, 242); border-left: none;"></td></tr><tr class="task-row" data-task-id="i2a"><td class="handle-cell"><div class="task-grip"><svg width="10" height="14" viewBox="0 0 10 14" fill="currentColor"><circle cx="3" cy="2.5" r="1.2"></circle><circle cx="7" cy="2.5" r="1.2"></circle><circle cx="3" cy="7" r="1.2"></circle><circle cx="7" cy="7" r="1.2"></circle><circle cx="3" cy="11.5" r="1.2"></circle><circle cx="7" cy="11.5" r="1.2"></circle></svg></div></td><td class="task-name-cell"><div class="task-name-wrap"><div class="task-name-text" contenteditable="false" spellcheck="false" data-fmt="rich" title="Click to edit task name">POS ↔ Dashboard data formatting and real-time info parity</div><div class="domain-badge is-unassigned">+</div><button class="task-open-btn" title="Open task detail"><svg width="14" height="14" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2H2a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V7"></path><polyline points="8,1 11,1 11,4"></polyline><line x1="5.5" y1="6.5" x2="11" y2="1"></line></svg></button><button class="task-menu-btn" title="Task options">···</button></div></td><td class="progress-col-cell"><div class="progress-circle-wrap" data-task-id="i2a">
+    <svg width="30" height="30" viewBox="0 0 30 30" class="prog-svg">
+      <circle cx="15" cy="15" r="10" fill="none" stroke="#E8ECF1" stroke-width="5.5"></circle>
+      <circle cx="15" cy="15" r="10" fill="none" stroke="#CBD5E1" stroke-width="5.5" stroke-dasharray="0.00 62.83" stroke-linecap="round" transform="rotate(-90 15 15)" class="prog-arc"></circle>
+    </svg>
+    <span class="prog-pct">0%</span></div></td><td class="task-team-cell"><input type="text" class="team-input" placeholder="Add owner…"></td><td colspan="6" class="gantt-cell" data-task-id="i2a"><div class="gantt-bg"><div class="gantt-band" style="flex: 1 1 0%; background: rgb(241, 245, 249);"></div><div class="gantt-band" style="flex: 4 1 0%; background: rgb(253, 248, 244);"></div><div class="gantt-band" style="flex: 1 1 0%; background: rgb(245, 243, 240);"></div></div><div class="gantt-grid" style="grid-template-columns: repeat(6, 1fr);"><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div></div><div class="task-bar" data-task-id="i2a" style="left: 50%; width: 50%; background: linear-gradient(rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.09) 100%), rgb(203, 213, 225);"><div class="resize-handle left" data-role="resize-left"></div>
+                   <div class="bar-label" style="color: rgba(0, 0, 0, 0.88);">POS ↔ Dashboard data…</div>
                    <div class="bar-pct" style="color: rgba(0, 0, 0, 0.88);"></div>
                    <div class="bar-progress-thumb" data-role="progress-thumb" style="left: 13px; --task-color: #2DD4BF;"></div>
-                   <div class="resize-handle right" data-role="resize-right"></div></div></td></tr><tr class="task-row" data-task-id="task-104"><td class="handle-cell"><div class="task-grip"><svg width="10" height="14" viewBox="0 0 10 14" fill="currentColor"><circle cx="3" cy="2.5" r="1.2"></circle><circle cx="7" cy="2.5" r="1.2"></circle><circle cx="3" cy="7" r="1.2"></circle><circle cx="7" cy="7" r="1.2"></circle><circle cx="3" cy="11.5" r="1.2"></circle><circle cx="7" cy="11.5" r="1.2"></circle></svg></div></td><td class="task-name-cell"><div class="task-name-wrap"><div class="task-name-text" contenteditable="false" spellcheck="false" data-fmt="rich" title="Click to edit task name">New task — click to rename</div><div class="domain-badge is-unassigned">+</div><button class="task-open-btn" title="Open task detail"><svg width="14" height="14" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2H2a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V7"></path><polyline points="8,1 11,1 11,4"></polyline><line x1="5.5" y1="6.5" x2="11" y2="1"></line></svg></button><button class="task-menu-btn" title="Task options">···</button></div></td><td class="progress-col-cell"><div class="progress-circle-wrap" data-task-id="task-104">
+                   <div class="resize-handle right" data-role="resize-right"></div></div></td></tr><tr class="task-row" data-task-id="i2b"><td class="handle-cell"><div class="task-grip"><svg width="10" height="14" viewBox="0 0 10 14" fill="currentColor"><circle cx="3" cy="2.5" r="1.2"></circle><circle cx="7" cy="2.5" r="1.2"></circle><circle cx="3" cy="7" r="1.2"></circle><circle cx="7" cy="7" r="1.2"></circle><circle cx="3" cy="11.5" r="1.2"></circle><circle cx="7" cy="11.5" r="1.2"></circle></svg></div></td><td class="task-name-cell"><div class="task-name-wrap"><div class="task-name-text" contenteditable="false" spellcheck="false" data-fmt="rich" title="Click to edit task name">Begin multi-location grid and library structure</div><div class="domain-badge is-unassigned">+</div><button class="task-open-btn" title="Open task detail"><svg width="14" height="14" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2H2a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V7"></path><polyline points="8,1 11,1 11,4"></polyline><line x1="5.5" y1="6.5" x2="11" y2="1"></line></svg></button><button class="task-menu-btn" title="Task options">···</button></div></td><td class="progress-col-cell"><div class="progress-circle-wrap" data-task-id="i2b">
     <svg width="30" height="30" viewBox="0 0 30 30" class="prog-svg">
       <circle cx="15" cy="15" r="10" fill="none" stroke="#E8ECF1" stroke-width="5.5"></circle>
       <circle cx="15" cy="15" r="10" fill="none" stroke="#CBD5E1" stroke-width="5.5" stroke-dasharray="0.00 62.83" stroke-linecap="round" transform="rotate(-90 15 15)" class="prog-arc"></circle>
     </svg>
-    <span class="prog-pct">0%</span></div></td><td class="task-team-cell"><input type="text" class="team-input" placeholder="Add owner…"></td><td colspan="6" class="gantt-cell" data-task-id="task-104"><div class="gantt-bg"><div class="gantt-band" style="flex: 1 1 0%; background: rgb(241, 245, 249);"></div><div class="gantt-band" style="flex: 4 1 0%; background: rgb(245, 243, 240);"></div><div class="gantt-band" style="flex: 1 1 0%; background: rgb(253, 248, 244);"></div></div><div class="gantt-grid" style="grid-template-columns: repeat(6, 1fr);"><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div></div><div class="task-bar" data-task-id="task-104" style="left: 0%; width: 16.6667%; background: linear-gradient(rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.09) 100%), rgb(203, 213, 225);"><div class="resize-handle left" data-role="resize-left"></div>
-                   <div class="bar-label" style="color: rgba(0, 0, 0, 0.88);">New task — click…</div>
+    <span class="prog-pct">0%</span></div></td><td class="task-team-cell"><input type="text" class="team-input" placeholder="Add owner…"></td><td colspan="6" class="gantt-cell" data-task-id="i2b"><div class="gantt-bg"><div class="gantt-band" style="flex: 1 1 0%; background: rgb(241, 245, 249);"></div><div class="gantt-band" style="flex: 4 1 0%; background: rgb(253, 248, 244);"></div><div class="gantt-band" style="flex: 1 1 0%; background: rgb(245, 243, 240);"></div></div><div class="gantt-grid" style="grid-template-columns: repeat(6, 1fr);"><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div></div><div class="task-bar" data-task-id="i2b" style="left: 66.6667%; width: 33.3333%; background: linear-gradient(rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.09) 100%), rgb(203, 213, 225);"><div class="resize-handle left" data-role="resize-left"></div>
+                   <div class="bar-label" style="color: rgba(0, 0, 0, 0.88);">Begin multi-location grid and…</div>
                    <div class="bar-pct" style="color: rgba(0, 0, 0, 0.88);"></div>
                    <div class="bar-progress-thumb" data-role="progress-thumb" style="left: 13px; --task-color: #2DD4BF;"></div>
-                   <div class="resize-handle right" data-role="resize-right"></div></div></td></tr></tbody><tbody class="init-group" id="group-init-1774569913802" data-init-id="init-1774569913802"><tr class="init-row"><td class="handle-cell" title="Drag to reorder" style="background: rgb(235, 237, 239);"><div class="priority-badge" title="Click for options · Drag to reorder" style="background: rgb(156, 163, 175);">03</div></td><td class="label-cell" colspan="3" style="border-right: 1px solid rgb(226, 232, 240); background: rgb(235, 237, 239);"><div class="label-inner"><span class="init-caret"><svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="2,4 6,8 10,4"></polyline></svg></span><span class="init-label-text" contenteditable="true" spellcheck="false" data-fmt="bold-only" style="color: rgba(0, 0, 0, 0.9);">Initiative 2</span></div></td><td colspan="6" class="gantt-cell" style="background: rgb(235, 237, 239); border-left: none;"></td></tr><tr class="task-row" data-task-id="task-1774569913803"><td class="handle-cell"><div class="task-grip"><svg width="10" height="14" viewBox="0 0 10 14" fill="currentColor"><circle cx="3" cy="2.5" r="1.2"></circle><circle cx="7" cy="2.5" r="1.2"></circle><circle cx="3" cy="7" r="1.2"></circle><circle cx="7" cy="7" r="1.2"></circle><circle cx="3" cy="11.5" r="1.2"></circle><circle cx="7" cy="11.5" r="1.2"></circle></svg></div></td><td class="task-name-cell"><div class="task-name-wrap"><div class="task-name-text" contenteditable="false" spellcheck="false" data-fmt="rich" title="Click to edit task name">New task — click to rename</div><div class="domain-badge is-unassigned">+</div><button class="task-open-btn" title="Open task detail"><svg width="14" height="14" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2H2a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V7"></path><polyline points="8,1 11,1 11,4"></polyline><line x1="5.5" y1="6.5" x2="11" y2="1"></line></svg></button><button class="task-menu-btn" title="Task options">···</button></div></td><td class="progress-col-cell"><div class="progress-circle-wrap" data-task-id="task-1774569913803">
+                   <div class="resize-handle right" data-role="resize-right"></div></div></td></tr><tr class="task-row" data-task-id="i2c"><td class="handle-cell"><div class="task-grip"><svg width="10" height="14" viewBox="0 0 10 14" fill="currentColor"><circle cx="3" cy="2.5" r="1.2"></circle><circle cx="7" cy="2.5" r="1.2"></circle><circle cx="3" cy="7" r="1.2"></circle><circle cx="7" cy="7" r="1.2"></circle><circle cx="3" cy="11.5" r="1.2"></circle><circle cx="7" cy="11.5" r="1.2"></circle></svg></div></td><td class="task-name-cell"><div class="task-name-wrap"><div class="task-name-text" contenteditable="false" spellcheck="false" data-fmt="rich" title="Click to edit task name">Role-based navigation (manager / accountant / owner)</div><div class="domain-badge is-unassigned">+</div><button class="task-open-btn" title="Open task detail"><svg width="14" height="14" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2H2a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V7"></path><polyline points="8,1 11,1 11,4"></polyline><line x1="5.5" y1="6.5" x2="11" y2="1"></line></svg></button><button class="task-menu-btn" title="Task options">···</button></div></td><td class="progress-col-cell"><div class="progress-circle-wrap" data-task-id="i2c">
     <svg width="30" height="30" viewBox="0 0 30 30" class="prog-svg">
       <circle cx="15" cy="15" r="10" fill="none" stroke="#E8ECF1" stroke-width="5.5"></circle>
       <circle cx="15" cy="15" r="10" fill="none" stroke="#CBD5E1" stroke-width="5.5" stroke-dasharray="0.00 62.83" stroke-linecap="round" transform="rotate(-90 15 15)" class="prog-arc"></circle>
     </svg>
-    <span class="prog-pct">0%</span></div></td><td class="task-team-cell"><input type="text" class="team-input" placeholder="Add owner…"></td><td colspan="6" class="gantt-cell" data-task-id="task-1774569913803"><div class="gantt-bg"><div class="gantt-band" style="flex: 1 1 0%; background: rgb(241, 245, 249);"></div><div class="gantt-band" style="flex: 4 1 0%; background: rgb(245, 243, 240);"></div><div class="gantt-band" style="flex: 1 1 0%; background: rgb(253, 248, 244);"></div></div><div class="gantt-grid" style="grid-template-columns: repeat(6, 1fr);"><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div></div><div class="task-bar" data-task-id="task-1774569913803" style="left: 0%; width: 16.6667%; background: linear-gradient(rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.09) 100%), rgb(203, 213, 225);"><div class="resize-handle left" data-role="resize-left"></div>
-                   <div class="bar-label" style="color: rgba(0, 0, 0, 0.88);">New task — click…</div>
+    <span class="prog-pct">0%</span></div></td><td class="task-team-cell"><input type="text" class="team-input" placeholder="Add owner…"></td><td colspan="6" class="gantt-cell" data-task-id="i2c"><div class="gantt-bg"><div class="gantt-band" style="flex: 1 1 0%; background: rgb(241, 245, 249);"></div><div class="gantt-band" style="flex: 4 1 0%; background: rgb(253, 248, 244);"></div><div class="gantt-band" style="flex: 1 1 0%; background: rgb(245, 243, 240);"></div></div><div class="gantt-grid" style="grid-template-columns: repeat(6, 1fr);"><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div></div><div class="task-bar" data-task-id="i2c" style="left: 83.3333%; width: 16.6667%; background: linear-gradient(rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.09) 100%), rgb(203, 213, 225);"><div class="resize-handle left" data-role="resize-left"></div>
+                   <div class="bar-label" style="color: rgba(0, 0, 0, 0.88);">Role-based navigation (manager /…</div>
                    <div class="bar-pct" style="color: rgba(0, 0, 0, 0.88);"></div>
-                   <div class="bar-progress-thumb" data-role="progress-thumb" style="left: 13px; --task-color: #9CA3AF;"></div>
+                   <div class="bar-progress-thumb" data-role="progress-thumb" style="left: 13px; --task-color: #2DD4BF;"></div>
+                   <div class="resize-handle right" data-role="resize-right"></div></div></td></tr><tr class="task-row" data-task-id="i2d"><td class="handle-cell"><div class="task-grip"><svg width="10" height="14" viewBox="0 0 10 14" fill="currentColor"><circle cx="3" cy="2.5" r="1.2"></circle><circle cx="7" cy="2.5" r="1.2"></circle><circle cx="3" cy="7" r="1.2"></circle><circle cx="7" cy="7" r="1.2"></circle><circle cx="3" cy="11.5" r="1.2"></circle><circle cx="7" cy="11.5" r="1.2"></circle></svg></div></td><td class="task-name-cell"><div class="task-name-wrap"><div class="task-name-text" contenteditable="false" spellcheck="false" data-fmt="rich" title="Click to edit task name">Self-service flows: eliminate dead-end support paths</div><div class="domain-badge is-unassigned">+</div><button class="task-open-btn" title="Open task detail"><svg width="14" height="14" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2H2a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V7"></path><polyline points="8,1 11,1 11,4"></polyline><line x1="5.5" y1="6.5" x2="11" y2="1"></line></svg></button><button class="task-menu-btn" title="Task options">···</button></div></td><td class="progress-col-cell"><div class="progress-circle-wrap" data-task-id="i2d">
+    <svg width="30" height="30" viewBox="0 0 30 30" class="prog-svg">
+      <circle cx="15" cy="15" r="10" fill="none" stroke="#E8ECF1" stroke-width="5.5"></circle>
+      <circle cx="15" cy="15" r="10" fill="none" stroke="#CBD5E1" stroke-width="5.5" stroke-dasharray="0.00 62.83" stroke-linecap="round" transform="rotate(-90 15 15)" class="prog-arc"></circle>
+    </svg>
+    <span class="prog-pct">0%</span></div></td><td class="task-team-cell"><input type="text" class="team-input" placeholder="Add owner…"></td><td colspan="6" class="gantt-cell" data-task-id="i2d"><div class="gantt-bg"><div class="gantt-band" style="flex: 1 1 0%; background: rgb(241, 245, 249);"></div><div class="gantt-band" style="flex: 4 1 0%; background: rgb(253, 248, 244);"></div><div class="gantt-band" style="flex: 1 1 0%; background: rgb(245, 243, 240);"></div></div><div class="gantt-grid" style="grid-template-columns: repeat(6, 1fr);"><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div></div><div class="task-bar" data-task-id="i2d" style="left: 83.3333%; width: 16.6667%; background: linear-gradient(rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.09) 100%), rgb(203, 213, 225);"><div class="resize-handle left" data-role="resize-left"></div>
+                   <div class="bar-label" style="color: rgba(0, 0, 0, 0.88);">Self-service flows: eliminate dead-end…</div>
+                   <div class="bar-pct" style="color: rgba(0, 0, 0, 0.88);"></div>
+                   <div class="bar-progress-thumb" data-role="progress-thumb" style="left: 13px; --task-color: #2DD4BF;"></div>
+                   <div class="resize-handle right" data-role="resize-right"></div></div></td></tr></tbody><tbody class="init-group" id="group-init3" data-init-id="init3"><tr class="init-row"><td class="handle-cell" title="Drag to reorder" style="background: rgb(250, 228, 254);"><div class="priority-badge" title="Click for options · Drag to reorder" style="background: rgb(232, 121, 249);">03</div></td><td class="label-cell" colspan="3" style="border-right: 1px solid rgb(226, 232, 240); background: rgb(250, 228, 254);"><div class="label-inner"><span class="init-caret"><svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="2,4 6,8 10,4"></polyline></svg></span><span class="init-label-text" contenteditable="true" spellcheck="false" data-fmt="bold-only" style="color: rgba(0, 0, 0, 0.9);">DESIGN STRATEGY</span></div></td><td colspan="6" class="gantt-cell" style="background: rgb(250, 228, 254); border-left: none;"></td></tr><tr class="task-row" data-task-id="i3a"><td class="handle-cell"><div class="task-grip"><svg width="10" height="14" viewBox="0 0 10 14" fill="currentColor"><circle cx="3" cy="2.5" r="1.2"></circle><circle cx="7" cy="2.5" r="1.2"></circle><circle cx="3" cy="7" r="1.2"></circle><circle cx="7" cy="7" r="1.2"></circle><circle cx="3" cy="11.5" r="1.2"></circle><circle cx="7" cy="11.5" r="1.2"></circle></svg></div></td><td class="task-name-cell"><div class="task-name-wrap"><div class="task-name-text" contenteditable="false" spellcheck="false" data-fmt="rich" title="Click to edit task name">Menu Management mobile: full rethink of most-demanded workflow</div><div class="domain-badge is-unassigned">+</div><button class="task-open-btn" title="Open task detail"><svg width="14" height="14" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2H2a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V7"></path><polyline points="8,1 11,1 11,4"></polyline><line x1="5.5" y1="6.5" x2="11" y2="1"></line></svg></button><button class="task-menu-btn" title="Task options">···</button></div></td><td class="progress-col-cell"><div class="progress-circle-wrap" data-task-id="i3a">
+    <svg width="30" height="30" viewBox="0 0 30 30" class="prog-svg">
+      <circle cx="15" cy="15" r="10" fill="none" stroke="#E8ECF1" stroke-width="5.5"></circle>
+      <circle cx="15" cy="15" r="10" fill="none" stroke="#CBD5E1" stroke-width="5.5" stroke-dasharray="0.00 62.83" stroke-linecap="round" transform="rotate(-90 15 15)" class="prog-arc"></circle>
+    </svg>
+    <span class="prog-pct">0%</span></div></td><td class="task-team-cell"><input type="text" class="team-input" placeholder="Add owner…"></td><td colspan="6" class="gantt-cell" data-task-id="i3a"><div class="gantt-bg"><div class="gantt-band" style="flex: 1 1 0%; background: rgb(241, 245, 249);"></div><div class="gantt-band" style="flex: 4 1 0%; background: rgb(253, 248, 244);"></div><div class="gantt-band" style="flex: 1 1 0%; background: rgb(245, 243, 240);"></div></div><div class="gantt-grid" style="grid-template-columns: repeat(6, 1fr);"><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div></div><div class="task-bar" data-task-id="i3a" style="left: 33.3333%; width: 66.6667%; background: linear-gradient(rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.09) 100%), rgb(203, 213, 225);"><div class="resize-handle left" data-role="resize-left"></div>
+                   <div class="bar-label" style="color: rgba(0, 0, 0, 0.88);">Menu Management mobile: full…</div>
+                   <div class="bar-pct" style="color: rgba(0, 0, 0, 0.88);"></div>
+                   <div class="bar-progress-thumb" data-role="progress-thumb" style="left: 13px; --task-color: #E879F9;"></div>
+                   <div class="resize-handle right" data-role="resize-right"></div></div></td></tr><tr class="task-row" data-task-id="i3b"><td class="handle-cell"><div class="task-grip"><svg width="10" height="14" viewBox="0 0 10 14" fill="currentColor"><circle cx="3" cy="2.5" r="1.2"></circle><circle cx="7" cy="2.5" r="1.2"></circle><circle cx="3" cy="7" r="1.2"></circle><circle cx="7" cy="7" r="1.2"></circle><circle cx="3" cy="11.5" r="1.2"></circle><circle cx="7" cy="11.5" r="1.2"></circle></svg></div></td><td class="task-name-cell"><div class="task-name-wrap"><div class="task-name-text" contenteditable="false" spellcheck="false" data-fmt="rich" title="Click to edit task name">Close design-to-engineering gap on breakpoint fixes</div><div class="domain-badge is-unassigned">+</div><button class="task-open-btn" title="Open task detail"><svg width="14" height="14" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2H2a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V7"></path><polyline points="8,1 11,1 11,4"></polyline><line x1="5.5" y1="6.5" x2="11" y2="1"></line></svg></button><button class="task-menu-btn" title="Task options">···</button></div></td><td class="progress-col-cell"><div class="progress-circle-wrap" data-task-id="i3b">
+    <svg width="30" height="30" viewBox="0 0 30 30" class="prog-svg">
+      <circle cx="15" cy="15" r="10" fill="none" stroke="#E8ECF1" stroke-width="5.5"></circle>
+      <circle cx="15" cy="15" r="10" fill="none" stroke="#CBD5E1" stroke-width="5.5" stroke-dasharray="0.00 62.83" stroke-linecap="round" transform="rotate(-90 15 15)" class="prog-arc"></circle>
+    </svg>
+    <span class="prog-pct">0%</span></div></td><td class="task-team-cell"><input type="text" class="team-input" placeholder="Add owner…"></td><td colspan="6" class="gantt-cell" data-task-id="i3b"><div class="gantt-bg"><div class="gantt-band" style="flex: 1 1 0%; background: rgb(241, 245, 249);"></div><div class="gantt-band" style="flex: 4 1 0%; background: rgb(253, 248, 244);"></div><div class="gantt-band" style="flex: 1 1 0%; background: rgb(245, 243, 240);"></div></div><div class="gantt-grid" style="grid-template-columns: repeat(6, 1fr);"><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div></div><div class="task-bar" data-task-id="i3b" style="left: 33.3333%; width: 66.6667%; background: linear-gradient(rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.09) 100%), rgb(203, 213, 225);"><div class="resize-handle left" data-role="resize-left"></div>
+                   <div class="bar-label" style="color: rgba(0, 0, 0, 0.88);">Close design-to-engineering gap on…</div>
+                   <div class="bar-pct" style="color: rgba(0, 0, 0, 0.88);"></div>
+                   <div class="bar-progress-thumb" data-role="progress-thumb" style="left: 13px; --task-color: #E879F9;"></div>
+                   <div class="resize-handle right" data-role="resize-right"></div></div></td></tr><tr class="task-row" data-task-id="i3c"><td class="handle-cell"><div class="task-grip"><svg width="10" height="14" viewBox="0 0 10 14" fill="currentColor"><circle cx="3" cy="2.5" r="1.2"></circle><circle cx="7" cy="2.5" r="1.2"></circle><circle cx="3" cy="7" r="1.2"></circle><circle cx="7" cy="7" r="1.2"></circle><circle cx="3" cy="11.5" r="1.2"></circle><circle cx="7" cy="11.5" r="1.2"></circle></svg></div></td><td class="task-name-cell"><div class="task-name-wrap"><div class="task-name-text" contenteditable="false" spellcheck="false" data-fmt="rich" title="Click to edit task name">Accessibility audit: scrollable indicators and mobile a11y</div><div class="domain-badge is-unassigned">+</div><button class="task-open-btn" title="Open task detail"><svg width="14" height="14" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2H2a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V7"></path><polyline points="8,1 11,1 11,4"></polyline><line x1="5.5" y1="6.5" x2="11" y2="1"></line></svg></button><button class="task-menu-btn" title="Task options">···</button></div></td><td class="progress-col-cell"><div class="progress-circle-wrap" data-task-id="i3c">
+    <svg width="30" height="30" viewBox="0 0 30 30" class="prog-svg">
+      <circle cx="15" cy="15" r="10" fill="none" stroke="#E8ECF1" stroke-width="5.5"></circle>
+      <circle cx="15" cy="15" r="10" fill="none" stroke="#CBD5E1" stroke-width="5.5" stroke-dasharray="0.00 62.83" stroke-linecap="round" transform="rotate(-90 15 15)" class="prog-arc"></circle>
+    </svg>
+    <span class="prog-pct">0%</span></div></td><td class="task-team-cell"><input type="text" class="team-input" placeholder="Add owner…"></td><td colspan="6" class="gantt-cell" data-task-id="i3c"><div class="gantt-bg"><div class="gantt-band" style="flex: 1 1 0%; background: rgb(241, 245, 249);"></div><div class="gantt-band" style="flex: 4 1 0%; background: rgb(253, 248, 244);"></div><div class="gantt-band" style="flex: 1 1 0%; background: rgb(245, 243, 240);"></div></div><div class="gantt-grid" style="grid-template-columns: repeat(6, 1fr);"><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div></div><div class="task-bar" data-task-id="i3c" style="left: 50%; width: 50%; background: linear-gradient(rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.09) 100%), rgb(203, 213, 225);"><div class="resize-handle left" data-role="resize-left"></div>
+                   <div class="bar-label" style="color: rgba(0, 0, 0, 0.88);">Accessibility audit: scrollable indicators…</div>
+                   <div class="bar-pct" style="color: rgba(0, 0, 0, 0.88);"></div>
+                   <div class="bar-progress-thumb" data-role="progress-thumb" style="left: 13px; --task-color: #E879F9;"></div>
+                   <div class="resize-handle right" data-role="resize-right"></div></div></td></tr><tr class="task-row" data-task-id="i3d"><td class="handle-cell"><div class="task-grip"><svg width="10" height="14" viewBox="0 0 10 14" fill="currentColor"><circle cx="3" cy="2.5" r="1.2"></circle><circle cx="7" cy="2.5" r="1.2"></circle><circle cx="3" cy="7" r="1.2"></circle><circle cx="7" cy="7" r="1.2"></circle><circle cx="3" cy="11.5" r="1.2"></circle><circle cx="7" cy="11.5" r="1.2"></circle></svg></div></td><td class="task-name-cell"><div class="task-name-wrap"><div class="task-name-text" contenteditable="false" spellcheck="false" data-fmt="rich" title="Click to edit task name">Mobile patterns applied beyond Menu Management</div><div class="domain-badge is-unassigned">+</div><button class="task-open-btn" title="Open task detail"><svg width="14" height="14" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2H2a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V7"></path><polyline points="8,1 11,1 11,4"></polyline><line x1="5.5" y1="6.5" x2="11" y2="1"></line></svg></button><button class="task-menu-btn" title="Task options">···</button></div></td><td class="progress-col-cell"><div class="progress-circle-wrap" data-task-id="i3d">
+    <svg width="30" height="30" viewBox="0 0 30 30" class="prog-svg">
+      <circle cx="15" cy="15" r="10" fill="none" stroke="#E8ECF1" stroke-width="5.5"></circle>
+      <circle cx="15" cy="15" r="10" fill="none" stroke="#CBD5E1" stroke-width="5.5" stroke-dasharray="0.00 62.83" stroke-linecap="round" transform="rotate(-90 15 15)" class="prog-arc"></circle>
+    </svg>
+    <span class="prog-pct">0%</span></div></td><td class="task-team-cell"><input type="text" class="team-input" placeholder="Add owner…"></td><td colspan="6" class="gantt-cell" data-task-id="i3d"><div class="gantt-bg"><div class="gantt-band" style="flex: 1 1 0%; background: rgb(241, 245, 249);"></div><div class="gantt-band" style="flex: 4 1 0%; background: rgb(253, 248, 244);"></div><div class="gantt-band" style="flex: 1 1 0%; background: rgb(245, 243, 240);"></div></div><div class="gantt-grid" style="grid-template-columns: repeat(6, 1fr);"><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div></div><div class="task-bar" data-task-id="i3d" style="left: 83.3333%; width: 16.6667%; background: linear-gradient(rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.09) 100%), rgb(203, 213, 225);"><div class="resize-handle left" data-role="resize-left"></div>
+                   <div class="bar-label" style="color: rgba(0, 0, 0, 0.88);">Mobile patterns applied beyond…</div>
+                   <div class="bar-pct" style="color: rgba(0, 0, 0, 0.88);"></div>
+                   <div class="bar-progress-thumb" data-role="progress-thumb" style="left: 13px; --task-color: #E879F9;"></div>
+                   <div class="resize-handle right" data-role="resize-right"></div></div></td></tr></tbody><tbody class="init-group" id="group-foundation" data-init-id="foundation"><tr class="init-row"><td class="handle-cell" title="Drag to reorder" style="background: rgb(230, 245, 208);"><div class="priority-badge" title="Click for options · Drag to reorder" style="background: rgb(132, 204, 22);">04</div></td><td class="label-cell" colspan="3" style="border-right: 1px solid rgb(226, 232, 240); background: rgb(230, 245, 208);"><div class="label-inner"><span class="init-caret"><svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="2,4 6,8 10,4"></polyline></svg></span><span class="init-label-text" contenteditable="true" spellcheck="false" data-fmt="bold-only" style="color: rgba(0, 0, 0, 0.9);">FoundationS</span></div></td><td colspan="6" class="gantt-cell" style="background: rgb(230, 245, 208); border-left: none;"></td></tr><tr class="task-row" data-task-id="f1"><td class="handle-cell"><div class="task-grip"><svg width="10" height="14" viewBox="0 0 10 14" fill="currentColor"><circle cx="3" cy="2.5" r="1.2"></circle><circle cx="7" cy="2.5" r="1.2"></circle><circle cx="3" cy="7" r="1.2"></circle><circle cx="7" cy="7" r="1.2"></circle><circle cx="3" cy="11.5" r="1.2"></circle><circle cx="7" cy="11.5" r="1.2"></circle></svg></div></td><td class="task-name-cell"><div class="task-name-wrap"><div class="task-name-text" contenteditable="false" spellcheck="false" data-fmt="rich" title="Click to edit task name">Establish Standards v0: principles, patterns, interactions</div><div class="domain-badge is-unassigned">+</div><button class="task-open-btn" title="Open task detail"><svg width="14" height="14" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2H2a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V7"></path><polyline points="8,1 11,1 11,4"></polyline><line x1="5.5" y1="6.5" x2="11" y2="1"></line></svg></button><button class="task-menu-btn" title="Task options">···</button></div></td><td class="progress-col-cell"><div class="progress-circle-wrap" data-task-id="f1">
+    <svg width="30" height="30" viewBox="0 0 30 30" class="prog-svg">
+      <circle cx="15" cy="15" r="10" fill="none" stroke="#E8ECF1" stroke-width="5.5"></circle>
+      <circle cx="15" cy="15" r="10" fill="none" stroke="#84CC16" stroke-width="5.5" stroke-dasharray="25.76 62.83" stroke-linecap="round" transform="rotate(-90 15 15)" class="prog-arc"></circle>
+    </svg>
+    <span class="prog-pct">41%</span></div></td><td class="task-team-cell"><input type="text" class="team-input" placeholder="Add owner…"></td><td colspan="6" class="gantt-cell" data-task-id="f1"><div class="gantt-bg"><div class="gantt-band" style="flex: 1 1 0%; background: rgb(241, 245, 249);"></div><div class="gantt-band" style="flex: 4 1 0%; background: rgb(253, 248, 244);"></div><div class="gantt-band" style="flex: 1 1 0%; background: rgb(245, 243, 240);"></div></div><div class="gantt-grid" style="grid-template-columns: repeat(6, 1fr);"><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div></div><div class="task-bar bar-has-progress" data-task-id="f1" style="left: 0%; width: 66.6667%; background: linear-gradient(rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.09) 100%), linear-gradient(to right, rgb(132, 204, 22) 41%, rgb(203, 213, 225) 41%);"><div class="resize-handle left" data-role="resize-left"></div>
+                   <div class="bar-label" style="color: rgba(0, 0, 0, 0.88);">Establish Standards v0: principles,…</div>
+                   <div class="bar-pct" style="color: rgba(0, 0, 0, 0.88);">41%</div>
+                   <div class="bar-progress-thumb" data-role="progress-thumb" style="left: 41%; --task-color: #84CC16;"></div>
+                   <div class="resize-handle right" data-role="resize-right"></div></div></td></tr><tr class="task-row" data-task-id="f3"><td class="handle-cell"><div class="task-grip"><svg width="10" height="14" viewBox="0 0 10 14" fill="currentColor"><circle cx="3" cy="2.5" r="1.2"></circle><circle cx="7" cy="2.5" r="1.2"></circle><circle cx="3" cy="7" r="1.2"></circle><circle cx="7" cy="7" r="1.2"></circle><circle cx="3" cy="11.5" r="1.2"></circle><circle cx="7" cy="11.5" r="1.2"></circle></svg></div></td><td class="task-name-cell"><div class="task-name-wrap"><div class="task-name-text" contenteditable="false" spellcheck="false" data-fmt="rich" title="Click to edit task name">Complete copy audit: title case, terminology, simplification</div><div class="domain-badge is-unassigned">+</div><button class="task-open-btn" title="Open task detail"><svg width="14" height="14" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2H2a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V7"></path><polyline points="8,1 11,1 11,4"></polyline><line x1="5.5" y1="6.5" x2="11" y2="1"></line></svg></button><button class="task-menu-btn" title="Task options">···</button></div></td><td class="progress-col-cell"><div class="progress-circle-wrap" data-task-id="f3">
+    <svg width="30" height="30" viewBox="0 0 30 30" class="prog-svg">
+      <circle cx="15" cy="15" r="10" fill="none" stroke="#E8ECF1" stroke-width="5.5"></circle>
+      <circle cx="15" cy="15" r="10" fill="none" stroke="#CBD5E1" stroke-width="5.5" stroke-dasharray="0.00 62.83" stroke-linecap="round" transform="rotate(-90 15 15)" class="prog-arc"></circle>
+    </svg>
+    <span class="prog-pct">0%</span></div></td><td class="task-team-cell"><input type="text" class="team-input" placeholder="Add owner…"></td><td colspan="6" class="gantt-cell" data-task-id="f3"><div class="gantt-bg"><div class="gantt-band" style="flex: 1 1 0%; background: rgb(241, 245, 249);"></div><div class="gantt-band" style="flex: 4 1 0%; background: rgb(253, 248, 244);"></div><div class="gantt-band" style="flex: 1 1 0%; background: rgb(245, 243, 240);"></div></div><div class="gantt-grid" style="grid-template-columns: repeat(6, 1fr);"><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div></div><div class="task-bar" data-task-id="f3" style="left: 16.6667%; width: 50%; background: linear-gradient(rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.09) 100%), rgb(203, 213, 225);"><div class="resize-handle left" data-role="resize-left"></div>
+                   <div class="bar-label" style="color: rgba(0, 0, 0, 0.88);">Complete copy audit: title…</div>
+                   <div class="bar-pct" style="color: rgba(0, 0, 0, 0.88);"></div>
+                   <div class="bar-progress-thumb" data-role="progress-thumb" style="left: 13px; --task-color: #84CC16;"></div>
+                   <div class="resize-handle right" data-role="resize-right"></div></div></td></tr><tr class="task-row" data-task-id="f4"><td class="handle-cell"><div class="task-grip"><svg width="10" height="14" viewBox="0 0 10 14" fill="currentColor"><circle cx="3" cy="2.5" r="1.2"></circle><circle cx="7" cy="2.5" r="1.2"></circle><circle cx="3" cy="7" r="1.2"></circle><circle cx="7" cy="7" r="1.2"></circle><circle cx="3" cy="11.5" r="1.2"></circle><circle cx="7" cy="11.5" r="1.2"></circle></svg></div></td><td class="task-name-cell"><div class="task-name-wrap"><div class="task-name-text" contenteditable="false" spellcheck="false" data-fmt="rich" title="Click to edit task name">Ship standardized save patterns, modals, and loading states</div><div class="domain-badge is-unassigned">+</div><button class="task-open-btn" title="Open task detail"><svg width="14" height="14" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2H2a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V7"></path><polyline points="8,1 11,1 11,4"></polyline><line x1="5.5" y1="6.5" x2="11" y2="1"></line></svg></button><button class="task-menu-btn" title="Task options">···</button></div></td><td class="progress-col-cell"><div class="progress-circle-wrap" data-task-id="f4">
+    <svg width="30" height="30" viewBox="0 0 30 30" class="prog-svg">
+      <circle cx="15" cy="15" r="10" fill="none" stroke="#E8ECF1" stroke-width="5.5"></circle>
+      <circle cx="15" cy="15" r="10" fill="none" stroke="#CBD5E1" stroke-width="5.5" stroke-dasharray="0.00 62.83" stroke-linecap="round" transform="rotate(-90 15 15)" class="prog-arc"></circle>
+    </svg>
+    <span class="prog-pct">0%</span></div></td><td class="task-team-cell"><input type="text" class="team-input" placeholder="Add owner…"></td><td colspan="6" class="gantt-cell" data-task-id="f4"><div class="gantt-bg"><div class="gantt-band" style="flex: 1 1 0%; background: rgb(241, 245, 249);"></div><div class="gantt-band" style="flex: 4 1 0%; background: rgb(253, 248, 244);"></div><div class="gantt-band" style="flex: 1 1 0%; background: rgb(245, 243, 240);"></div></div><div class="gantt-grid" style="grid-template-columns: repeat(6, 1fr);"><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div></div><div class="task-bar" data-task-id="f4" style="left: 50%; width: 50%; background: linear-gradient(rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.09) 100%), rgb(203, 213, 225);"><div class="resize-handle left" data-role="resize-left"></div>
+                   <div class="bar-label" style="color: rgba(0, 0, 0, 0.88);">Ship standardized save patterns,…</div>
+                   <div class="bar-pct" style="color: rgba(0, 0, 0, 0.88);"></div>
+                   <div class="bar-progress-thumb" data-role="progress-thumb" style="left: 13px; --task-color: #84CC16;"></div>
+                   <div class="resize-handle right" data-role="resize-right"></div></div></td></tr><tr class="task-row" data-task-id="f5"><td class="handle-cell"><div class="task-grip"><svg width="10" height="14" viewBox="0 0 10 14" fill="currentColor"><circle cx="3" cy="2.5" r="1.2"></circle><circle cx="7" cy="2.5" r="1.2"></circle><circle cx="3" cy="7" r="1.2"></circle><circle cx="7" cy="7" r="1.2"></circle><circle cx="3" cy="11.5" r="1.2"></circle><circle cx="7" cy="11.5" r="1.2"></circle></svg></div></td><td class="task-name-cell"><div class="task-name-wrap"><div class="task-name-text" contenteditable="false" spellcheck="false" data-fmt="rich" title="Click to edit task name">Publish Express Experience Playbook: patterns v1</div><div class="domain-badge is-unassigned">+</div><button class="task-open-btn" title="Open task detail"><svg width="14" height="14" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2H2a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V7"></path><polyline points="8,1 11,1 11,4"></polyline><line x1="5.5" y1="6.5" x2="11" y2="1"></line></svg></button><button class="task-menu-btn" title="Task options">···</button></div></td><td class="progress-col-cell"><div class="progress-circle-wrap" data-task-id="f5">
+    <svg width="30" height="30" viewBox="0 0 30 30" class="prog-svg">
+      <circle cx="15" cy="15" r="10" fill="none" stroke="#E8ECF1" stroke-width="5.5"></circle>
+      <circle cx="15" cy="15" r="10" fill="none" stroke="#CBD5E1" stroke-width="5.5" stroke-dasharray="0.00 62.83" stroke-linecap="round" transform="rotate(-90 15 15)" class="prog-arc"></circle>
+    </svg>
+    <span class="prog-pct">0%</span></div></td><td class="task-team-cell"><input type="text" class="team-input" placeholder="Add owner…"></td><td colspan="6" class="gantt-cell" data-task-id="f5"><div class="gantt-bg"><div class="gantt-band" style="flex: 1 1 0%; background: rgb(241, 245, 249);"></div><div class="gantt-band" style="flex: 4 1 0%; background: rgb(253, 248, 244);"></div><div class="gantt-band" style="flex: 1 1 0%; background: rgb(245, 243, 240);"></div></div><div class="gantt-grid" style="grid-template-columns: repeat(6, 1fr);"><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div></div><div class="task-bar" data-task-id="f5" style="left: 83.3333%; width: 16.6667%; background: linear-gradient(rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.09) 100%), rgb(203, 213, 225);"><div class="resize-handle left" data-role="resize-left"></div>
+                   <div class="bar-label" style="color: rgba(0, 0, 0, 0.88);">Publish Express Experience Playbook:…</div>
+                   <div class="bar-pct" style="color: rgba(0, 0, 0, 0.88);"></div>
+                   <div class="bar-progress-thumb" data-role="progress-thumb" style="left: 13px; --task-color: #84CC16;"></div>
+                   <div class="resize-handle right" data-role="resize-right"></div></div></td></tr><tr class="task-row" data-task-id="f6"><td class="handle-cell"><div class="task-grip"><svg width="10" height="14" viewBox="0 0 10 14" fill="currentColor"><circle cx="3" cy="2.5" r="1.2"></circle><circle cx="7" cy="2.5" r="1.2"></circle><circle cx="3" cy="7" r="1.2"></circle><circle cx="7" cy="7" r="1.2"></circle><circle cx="3" cy="11.5" r="1.2"></circle><circle cx="7" cy="11.5" r="1.2"></circle></svg></div></td><td class="task-name-cell"><div class="task-name-wrap"><div class="task-name-text" contenteditable="false" spellcheck="false" data-fmt="rich" title="Click to edit task name">Stand up intake and enablement model (office hours, reviews)</div><div class="domain-badge is-unassigned">+</div><button class="task-open-btn" title="Open task detail"><svg width="14" height="14" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2H2a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V7"></path><polyline points="8,1 11,1 11,4"></polyline><line x1="5.5" y1="6.5" x2="11" y2="1"></line></svg></button><button class="task-menu-btn" title="Task options">···</button></div></td><td class="progress-col-cell"><div class="progress-circle-wrap" data-task-id="f6">
+    <svg width="30" height="30" viewBox="0 0 30 30" class="prog-svg">
+      <circle cx="15" cy="15" r="10" fill="none" stroke="#E8ECF1" stroke-width="5.5"></circle>
+      <circle cx="15" cy="15" r="10" fill="none" stroke="#CBD5E1" stroke-width="5.5" stroke-dasharray="0.00 62.83" stroke-linecap="round" transform="rotate(-90 15 15)" class="prog-arc"></circle>
+    </svg>
+    <span class="prog-pct">0%</span></div></td><td class="task-team-cell"><input type="text" class="team-input" placeholder="Add owner…"></td><td colspan="6" class="gantt-cell" data-task-id="f6"><div class="gantt-bg"><div class="gantt-band" style="flex: 1 1 0%; background: rgb(241, 245, 249);"></div><div class="gantt-band" style="flex: 4 1 0%; background: rgb(253, 248, 244);"></div><div class="gantt-band" style="flex: 1 1 0%; background: rgb(245, 243, 240);"></div></div><div class="gantt-grid" style="grid-template-columns: repeat(6, 1fr);"><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div></div><div class="task-bar" data-task-id="f6" style="left: 83.3333%; width: 16.6667%; background: linear-gradient(rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.09) 100%), rgb(203, 213, 225);"><div class="resize-handle left" data-role="resize-left"></div>
+                   <div class="bar-label" style="color: rgba(0, 0, 0, 0.88);">Stand up intake and…</div>
+                   <div class="bar-pct" style="color: rgba(0, 0, 0, 0.88);"></div>
+                   <div class="bar-progress-thumb" data-role="progress-thumb" style="left: 13px; --task-color: #84CC16;"></div>
                    <div class="resize-handle right" data-role="resize-right"></div></div></td></tr></tbody></table>
     <!-- Now needle + elapsed overlay — positioned absolutely inside gantt-wrap -->
-    <div id="now-overlay" style="display: none;"></div>
-    <div id="now-needle" style="display: none;">
+    <div id="now-overlay" style="display: block; left: 777.773px; width: 0px;"></div>
+    <div id="now-needle" style="display: block; left: 777.773px;">
       <!-- Vertical oval — drag handle, bottom merges into the line -->
       <div id="now-badge" title="Drag to reposition · click Now to hide"></div>
     </div>
@@ -1188,7 +1278,7 @@ body.now-dragging, body.now-dragging * { cursor: grabbing !important; user-selec
       </svg>
       Drag ⠿ to reprioritise · Drag bars to reschedule · Click any text to edit · Drag column edges to resize · Click Wk 1 to set a start date
     </div>
-    <div class="last-edited" id="last-edited">Task reordered · 12:40 PM</div>
+    <div class="last-edited" id="last-edited">Renamed to "Desktop experience: identify &amp;" · 12:50 PM</div>
   </div>
 </div>
 
@@ -1250,30 +1340,33 @@ let activeDomain = null;
 const PHASES = [
   {
     "id": "ph1",
-    "label": "Phase 1",
+    "label": "KICKOFF",
     "span": 1,
-    "accentColor": "#94A3B8",
+    "accentColor": "#D9DEE5",
     "textColor": "#475569",
     "bgColor": "#F8FAFC",
-    "bandColor": "#F1F5F9"
+    "bandColor": "#F1F5F9",
+    "name": "Slate"
   },
   {
     "id": "ph2",
-    "label": "Phase 2",
+    "label": "DESIGN & REFINE",
     "span": 4,
-    "accentColor": "#C4B5A5",
-    "textColor": "#57534E",
-    "bgColor": "#FAFAF9",
-    "bandColor": "#F5F3F0"
+    "accentColor": "#EFE6D9",
+    "textColor": "#78350F",
+    "bgColor": "#FEFCFB",
+    "bandColor": "#FDF8F4",
+    "name": "Cream"
   },
   {
     "id": "ph3",
-    "label": "Phase 3",
+    "label": "ALIGN",
     "span": 1,
-    "accentColor": "#E5D5C0",
-    "textColor": "#78350F",
-    "bgColor": "#FEFCFB",
-    "bandColor": "#FDF8F4"
+    "accentColor": "#DCD3C9",
+    "textColor": "#57534E",
+    "bgColor": "#FAFAF9",
+    "bandColor": "#F5F3F0",
+    "name": "Stone"
   }
 ];
 function phaseRgb(hex) {
@@ -1282,144 +1375,197 @@ function phaseRgb(hex) {
 
 const INITIATIVES = [
   {
-    "id": "init-1774569913800",
+    "id": "init1",
     "color": "#818CF8",
     "lightBg": "rgb(230,232,254)",
-    "label": "DASHBOARD IA",
+    "label": "Information Architecture",
     "tasks": [
       {
-        "id": "task-1774569913801",
-        "name": "Finalize Dashboard Vision: future state doc, team, and scope",
+        "id": "i1a",
+        "name": "Finalize Dashboard Experience Team charter and scope",
         "start": 1,
         "end": 1,
         "team": "",
-        "_activated": false,
-        "progress": 53,
-        "notes": "<br>"
+        "progress": 46
       },
       {
-        "id": "task-106",
+        "id": "i1b",
         "name": "Desktop experience: identify & prioritize key flows, entry points, and navigation behaviors",
         "start": 1,
-        "end": 1,
-        "team": "",
-        "_activated": false,
-        "progress": 0
+        "end": 2,
+        "team": ""
       },
       {
-        "id": "task-105",
-        "name": "Mobile experience: identify & prioritize key flows, entry points, and navigation behaviors",
+        "id": "i1d",
+        "name": "Baseline metrics: task completion, time-to-configure, tickets",
+        "start": 1,
+        "end": 3,
+        "team": ""
+      },
+      {
+        "id": "i1e",
+        "name": "Restructure side nav around merchant workflows, not features",
+        "start": 3,
+        "end": 7,
+        "team": ""
+      },
+      {
+        "id": "i1f",
+        "name": "Homepage redesign: action-oriented and merchant-type aware",
+        "start": 3,
+        "end": 8,
+        "team": ""
+      },
+      {
+        "id": "i1g",
+        "name": "Ship global search as a quick win — generates navigation data",
+        "start": 4,
+        "end": 6,
+        "team": ""
+      },
+      {
+        "id": "i1h",
+        "name": "Feature discovery: onboarding, announcements, empty states",
+        "start": 7,
+        "end": 11,
+        "team": ""
+      },
+      {
+        "id": "i1i",
+        "name": "Custom views for reporting — reduce 1-off report requests",
+        "start": 8,
+        "end": 12,
+        "team": ""
+      },
+      {
+        "id": "i1j",
+        "name": "Identify domain initiatives needing Dashboard Experience review",
+        "start": 10,
+        "end": 12,
+        "team": ""
+      },
+      {
+        "id": "i1c",
+        "name": "Stand up cross-functional team: design, PM, eng, data, support",
         "start": 1,
         "end": 2,
-        "team": "",
-        "_activated": false,
-        "progress": 80
-      },
-      {
-        "id": "task-102",
-        "name": "Design business-oriented funnels and landing pages, clearer pathways into core areas, and priority JTBD",
-        "start": 1,
-        "end": 1,
-        "team": "",
-        "_activated": false,
-        "progress": 48
-      },
-      {
-        "id": "task-101",
-        "name": "Define Dashboard Identity - draft identity statement for stakeholder review",
-        "start": 1,
-        "end": 1,
-        "team": "",
-        "_activated": false,
-        "progress": 36
-      },
-      {
-        "id": "task-103",
-        "name": "New task — click to rename",
-        "start": 1,
-        "end": 1,
-        "team": "",
-        "_activated": false,
-        "progress": 0
-      },
-      {
-        "id": "task-104",
-        "name": "New task — click to rename",
-        "start": 1,
-        "end": 1,
-        "team": "",
-        "_activated": false,
-        "progress": 0
-      },
-      {
-        "id": "task-107",
-        "name": "Create prototype with future state vision: simplified side nav, landing pages, and mobile patterns",
-        "start": 1,
-        "end": 1,
-        "team": "",
-        "_activated": false,
-        "progress": 0
+        "team": ""
       }
     ]
   },
   {
-    "id": "init-1774624505998",
+    "id": "init2",
     "color": "#2DD4BF",
     "lightBg": "rgb(213,246,242)",
-    "label": "STRATEGY",
+    "label": "MERCHANT MODEL",
     "tasks": [
       {
-        "id": "task-101",
-        "name": "Define Dashboard Identity - draft identity statement for stakeholder review",
-        "start": 1,
-        "end": 1,
-        "team": "",
-        "_activated": false,
-        "progress": 36
+        "id": "i2a",
+        "name": "POS ↔ Dashboard data formatting and real-time info parity",
+        "start": 4,
+        "end": 8,
+        "team": ""
       },
       {
-        "id": "task-102",
-        "name": "Design business-oriented funnels and landing pages, clearer pathways into core areas, and priority JTBD",
-        "start": 1,
-        "end": 1,
-        "team": "",
-        "_activated": false,
-        "progress": 48
+        "id": "i2b",
+        "name": "Begin multi-location grid and library structure",
+        "start": 5,
+        "end": 12,
+        "team": ""
       },
       {
-        "id": "task-103",
-        "name": "New task — click to rename",
-        "start": 1,
-        "end": 1,
-        "team": "",
-        "_activated": false,
-        "progress": 0
+        "id": "i2c",
+        "name": "Role-based navigation (manager / accountant / owner)",
+        "start": 6,
+        "end": 12,
+        "team": ""
       },
       {
-        "id": "task-104",
-        "name": "New task — click to rename",
-        "start": 1,
-        "end": 1,
-        "team": "",
-        "_activated": false,
-        "progress": 0
+        "id": "i2d",
+        "name": "Self-service flows: eliminate dead-end support paths",
+        "start": 8,
+        "end": 12,
+        "team": ""
       }
     ]
   },
   {
-    "id": "init-1774569913802",
-    "color": "#9CA3AF",
-    "lightBg": "#F9FAFB",
-    "label": "Initiative 2",
+    "id": "init3",
+    "color": "#E879F9",
+    "lightBg": "rgb(250,228,254)",
+    "label": "DESIGN STRATEGY",
     "tasks": [
       {
-        "id": "task-1774569913803",
-        "name": "New task — click to rename",
+        "id": "i3a",
+        "name": "Menu Management mobile: full rethink of most-demanded workflow",
+        "start": 3,
+        "end": 7,
+        "team": ""
+      },
+      {
+        "id": "i3b",
+        "name": "Close design-to-engineering gap on breakpoint fixes",
+        "start": 3,
+        "end": 6,
+        "team": ""
+      },
+      {
+        "id": "i3c",
+        "name": "Accessibility audit: scrollable indicators and mobile a11y",
+        "start": 4,
+        "end": 6,
+        "team": ""
+      },
+      {
+        "id": "i3d",
+        "name": "Mobile patterns applied beyond Menu Management",
+        "start": 7,
+        "end": 12,
+        "team": ""
+      }
+    ]
+  },
+  {
+    "id": "foundation",
+    "color": "#84CC16",
+    "lightBg": "rgb(230,245,208)",
+    "label": "FoundationS",
+    "tasks": [
+      {
+        "id": "f1",
+        "name": "Establish Standards v0: principles, patterns, interactions",
         "start": 1,
-        "end": 1,
+        "end": 4,
         "team": "",
-        "_activated": false,
-        "progress": 0
+        "progress": 41
+      },
+      {
+        "id": "f3",
+        "name": "Complete copy audit: title case, terminology, simplification",
+        "start": 2,
+        "end": 4,
+        "team": ""
+      },
+      {
+        "id": "f4",
+        "name": "Ship standardized save patterns, modals, and loading states",
+        "start": 4,
+        "end": 6,
+        "team": ""
+      },
+      {
+        "id": "f5",
+        "name": "Publish Express Experience Playbook: patterns v1",
+        "start": 7,
+        "end": 10,
+        "team": ""
+      },
+      {
+        "id": "f6",
+        "name": "Stand up intake and enablement model (office hours, reviews)",
+        "start": 9,
+        "end": 12,
+        "team": ""
       }
     ]
   }
