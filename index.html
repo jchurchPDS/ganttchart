@@ -929,21 +929,7 @@ body.now-dragging, body.now-dragging * { cursor: grabbing !important; user-selec
   .task-row:hover .task-grip-wrap { opacity: 1; color: #94A3B8; }
   .task-letter-badge { display: none !important; }
   .task-grip { display: none !important; }
-</style><script src="chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/js/recordConsoleEvents.js"></script><script src="chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/js/recordNetworkEvents.js"></script><style id="four-tweaks-css">.task-num{display:none!important}
-.task-name-wrap{position:relative}
-.task-letter-badge{position:absolute;left:0;width:26px;text-align:center;top:50%;transform:translateY(-50%);font-size:10px;font-weight:700;color:#94A3B8;outline:none;line-height:1;padding:2px 3px;border-radius:3px;border:1px solid transparent;cursor:text;z-index:2;transition:border-color .15s,background .15s,color .15s;white-space:nowrap;overflow:hidden}
-.task-letter-badge:hover{color:#64748B}
-.task-letter-badge:focus{color:#334155;background:#F1F5F9;border-color:#CBD5E1}
-.card-header-sub{display:none!important}
-.card-header{padding:7px 24px!important}
-#now-toggle-btn.today-toggle{display:inline-flex!important;align-items:center;gap:7px;background:none;border:none;cursor:pointer;padding:4px 0;box-shadow:none;outline:none}
-.today-toggle-track{width:32px;height:18px;border-radius:9px;background:#CBD5E1;position:relative;transition:background .2s;flex-shrink:0;display:block}
-#now-toggle-btn.today-toggle.is-active .today-toggle-track{background:#3B82F6}
-.today-toggle-thumb{position:absolute;top:2px;left:2px;width:14px;height:14px;border-radius:50%;background:white;box-shadow:0 1px 3px rgba(0,0,0,.25);transition:transform .2s;display:block}
-#now-toggle-btn.today-toggle.is-active .today-toggle-thumb{transform:translateX(14px)}
-.today-toggle-lbl{font-size:12px;color:#64748B;font-weight:500}
-#now-toggle-btn.today-toggle.is-active .today-toggle-lbl{color:#1D4ED8;font-weight:600}
-.now-toggle-thumb{display:none!important}</style><style id="claude-agent-animation-styles">
+</style><script src="chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/js/recordConsoleEvents.js"></script><script src="chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/js/recordNetworkEvents.js"></script><style id="claude-agent-animation-styles">
       @keyframes claude-pulse {
         0% {
           box-shadow: 
@@ -964,10 +950,24 @@ body.now-dragging, body.now-dragging * { cursor: grabbing !important; user-selec
             inset 0 0 30px rgba(217, 119, 87, 0.1);
         }
       }
-    </style></head>
+    </style><style id="four-tweaks-css">.task-num{display:none!important}
+.task-name-wrap{position:relative}
+.task-letter-badge{position:absolute;left:0;width:26px;text-align:center;top:50%;transform:translateY(-50%);font-size:10px;font-weight:700;color:#94A3B8;outline:none;line-height:1;padding:2px 3px;border-radius:3px;border:1px solid transparent;cursor:text;z-index:2;transition:border-color .15s,background .15s,color .15s;white-space:nowrap;overflow:hidden}
+.task-letter-badge:hover{color:#64748B}
+.task-letter-badge:focus{color:#334155;background:#F1F5F9;border-color:#CBD5E1}
+.card-header-sub{display:none!important}
+.card-header{padding:7px 24px!important}
+#now-toggle-btn.today-toggle{display:inline-flex!important;align-items:center;gap:7px;background:none;border:none;cursor:pointer;padding:4px 0;box-shadow:none;outline:none}
+.today-toggle-track{width:32px;height:18px;border-radius:9px;background:#CBD5E1;position:relative;transition:background .2s;flex-shrink:0;display:block}
+#now-toggle-btn.today-toggle.is-active .today-toggle-track{background:#3B82F6}
+.today-toggle-thumb{position:absolute;top:2px;left:2px;width:14px;height:14px;border-radius:50%;background:white;box-shadow:0 1px 3px rgba(0,0,0,.25);transition:transform .2s;display:block}
+#now-toggle-btn.today-toggle.is-active .today-toggle-thumb{transform:translateX(14px)}
+.today-toggle-lbl{font-size:12px;color:#64748B;font-weight:500}
+#now-toggle-btn.today-toggle.is-active .today-toggle-lbl{color:#1D4ED8;font-weight:600}
+.now-toggle-thumb{display:none!important}</style></head>
 <body class="">
 
-<div id="fmt-toolbar" style="display: none; left: 180.758px; top: 603.898px;">
+<div id="fmt-toolbar" style="display: none; left: 215.105px; top: 921.18px;">
   <button data-cmd="bold" title="Bold (⌘B)" class=""><b>B</b></button>
   <button data-cmd="italic" title="Italic (⌘I)" class="fmt-rich" style=""><i style="font-style:italic">I</i></button>
   <span class="fmt-sep fmt-rich" style=""></span>
@@ -985,11 +985,11 @@ body.now-dragging, body.now-dragging * { cursor: grabbing !important; user-selec
   <div class="drawer-notes" id="drawer-notes" contenteditable="true" spellcheck="false" data-fmt="rich"></div>
 </div>
 
-<div id="bar-tip" style="display: none; left: 1517px; top: 746px;">04/20 – 05/03</div>
+<div id="bar-tip" style="display: none; left: 1489px; top: 909px;">05/04 – 05/10</div>
 <div id="init-ghost" style="display: none; left: 133px; top: 456px;">MILESTONES</div>
 <div id="drop-line" style="display: none; left: 100px; width: 1599.5px; top: 476px;"></div>
 <div id="task-drop-line" style="display: none; left: 152px; top: 792.75px; width: 1529.5px;"></div>
-<div id="init-dropdown" style="display: none; left: 773.086px; top: 835.797px;"><div class="dd-item" style="color: rgb(239, 68, 68);"><span style="margin-right:5px;font-size:12px">🗑</span>Delete task</div><button class="dd-close-btn" title="Close">×</button></div>
+<div id="init-dropdown" style="display: none; left: 109.281px; top: 481.453px;"><div class="dd-item"><svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor"><path d="M6.75 1.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5z"></path></svg><span>Add task</span></div><div class="dd-divider"></div><div class="dd-item"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2z"></path><rect x="1" y="1" width="14" height="14" rx="2" ry="2" stroke="currentColor" stroke-width="1.5" fill="none"></rect></svg><span>Add new initiative</span></div><div class="dd-item"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H6zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1H4a2 2 0 0 1-2-2V5z"></path></svg><span>Duplicate</span></div><div class="dd-divider"></div><div class="dd-item danger"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916z"></path></svg><span>Delete</span></div><div class="dd-divider"></div><div class="dd-section-label">Color</div><div class="dd-color-grid"><div class="dd-color-swatch active" title="Yellow" style="background: rgb(245, 158, 11);"></div><div class="dd-color-swatch" title="Lime" style="background: rgb(132, 204, 22);"></div><div class="dd-color-swatch" title="Teal" style="background: rgb(45, 212, 191);"></div><div class="dd-color-swatch" title="Cyan" style="background: rgb(56, 189, 248);"></div><div class="dd-color-swatch" title="Indigo" style="background: rgb(129, 140, 248);"></div><div class="dd-color-swatch" title="Purple" style="background: rgb(192, 132, 252);"></div><div class="dd-color-swatch" title="Magenta" style="background: rgb(232, 121, 249);"></div><div class="dd-color-swatch" title="Salmon" style="background: rgb(248, 113, 113);"></div><div class="dd-color-swatch" title="Slate" style="background: rgb(148, 163, 184);"></div><div class="dd-color-swatch" title="Stone" style="background: rgb(168, 162, 158);"></div><div class="dd-color-swatch" title="Mist" style="background: rgb(203, 213, 225);"></div><div class="dd-color-swatch" title="Pebble" style="background: rgb(156, 163, 175);"></div></div><button class="dd-close-btn" title="Close">×</button></div>
 <div id="domain-picker" class="init-dropdown"></div>
 <div id="sb-chart-menu"></div>
 <input type="date" class="wk1-date-input" id="wk1-date-input">
@@ -1031,7 +1031,7 @@ body.now-dragging, body.now-dragging * { cursor: grabbing !important; user-selec
       </svg>
       <div class="sb-chart-info">
         <div class="sb-chart-name" title="New Chart — Design Execution Plan">New Chart — Design Execution Plan</div>
-        <div class="sb-chart-meta">6m ago</div>
+        <div class="sb-chart-meta">16m ago</div>
       </div>
       <button class="sb-chart-menu-btn" title="Options">···</button></div><div class="sb-chart-card active" data-chart-id="chart-initial">
       <svg class="sb-chart-icon" width="14" height="14" viewBox="0 0 16 16" fill="currentColor">
@@ -1244,7 +1244,7 @@ body.now-dragging, body.now-dragging * { cursor: grabbing !important; user-selec
       <circle cx="15" cy="15" r="10" fill="none" stroke="#CBD5E1" stroke-width="5.5" stroke-dasharray="0.00 62.83" stroke-linecap="round" transform="rotate(-90 15 15)" class="prog-arc"></circle>
     </svg>
     <span class="prog-pct">0%</span></div></td><td class="task-team-cell"><input type="text" class="team-input" placeholder="Add owner…"></td><td colspan="6" class="gantt-cell" data-task-id="task-101"><div class="gantt-bg"><div class="gantt-band" style="flex: 1 1 0%; background: rgb(245, 249, 255);"></div><div class="gantt-band" style="flex: 4 1 0%; background: rgb(246, 249, 251);"></div><div class="gantt-band" style="flex: 1 1 0%; background: rgb(239, 246, 255);"></div></div><div class="gantt-grid" style="grid-template-columns: repeat(6, 1fr);"><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div></div><div class="task-bar bar-has-progress" data-task-id="task-101" style="left: 0%; width: 33.3333%; background: linear-gradient(rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.09) 100%), linear-gradient(to right, rgb(45, 212, 191) 72%, rgb(203, 213, 225) 72%);"><div class="resize-handle left" data-role="resize-left"></div>
-                   <div class="bar-label" style="color: rgba(0, 0, 0, 0.88);">Work with data team…</div>
+                   <div class="bar-label" style="color: rgba(0, 0, 0, 0.88);">Leadership approval on future…</div>
                    <div class="bar-pct" style="color: rgba(0, 0, 0, 0.88);">72%</div>
                    <div class="bar-progress-thumb" data-role="progress-thumb" style="left: 72%; --task-color: #2DD4BF;"></div>
                    <div class="resize-handle right" data-role="resize-right"></div></div></td></tr></tbody><tbody class="init-group" id="group-init3" data-init-id="init3"><tr class="init-row"><td class="handle-cell" title="Drag to reorder" style="background: rgb(250, 228, 254);"><div class="priority-badge" title="Click for options · Drag to reorder" style="background: rgb(232, 121, 249);">03</div></td><td class="label-cell" colspan="3" style="border-right: 1px solid rgb(226, 232, 240); background: rgb(250, 228, 254);"><div class="label-inner"><span class="init-caret"><svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="2,4 6,8 10,4"></polyline></svg></span><span class="init-label-text" contenteditable="true" spellcheck="false" data-fmt="bold-only" style="color: rgba(0, 0, 0, 0.9);">MERCHANT MODEL</span></div></td><td colspan="6" class="gantt-cell" style="background: rgb(250, 228, 254); border-left: none;"></td></tr><tr class="task-row" data-task-id="i3b"><td class="handle-cell"><div class="task-letter-handle">A</div></td><td class="task-name-cell"><div class="task-name-wrap"><div class="task-name-text" contenteditable="false" spellcheck="false" data-fmt="rich" title="Click to edit task name">Define merchant permissions, roles and map who needs access to what and how scope should work</div><div class="domain-badge is-unassigned">+</div><button class="task-open-btn" title="Open task detail"><svg width="14" height="14" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2H2a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V7"></path><polyline points="8,1 11,1 11,4"></polyline><line x1="5.5" y1="6.5" x2="11" y2="1"></line></svg></button><button class="task-menu-btn" title="Task options">···</button><div class="task-letter-badge" contenteditable="true" spellcheck="false">A</div><div class="task-grip-wrap"><svg width="8" height="14" viewBox="0 0 8 14" fill="none"><circle cx="2" cy="2" r="1.5" fill="currentColor"></circle><circle cx="6" cy="2" r="1.5" fill="currentColor"></circle><circle cx="2" cy="7" r="1.5" fill="currentColor"></circle><circle cx="6" cy="7" r="1.5" fill="currentColor"></circle><circle cx="2" cy="12" r="1.5" fill="currentColor"></circle><circle cx="6" cy="12" r="1.5" fill="currentColor"></circle></svg></div></div></td><td class="progress-col-cell"><div class="progress-circle-wrap" data-task-id="i3b">
@@ -1364,10 +1364,29 @@ body.now-dragging, body.now-dragging * { cursor: grabbing !important; user-selec
                    <div class="bar-label" style="color: rgba(0, 0, 0, 0.88);">Thursday progress review</div>
                    <div class="bar-pct" style="color: rgba(0, 0, 0, 0.88);"></div>
                    <div class="bar-progress-thumb" data-role="progress-thumb" style="left: 13px; --task-color: #F59E0B;"></div>
+                   <div class="resize-handle right" data-role="resize-right"></div></div></td></tr><tr class="task-row" data-task-id="task-101"><td class="handle-cell"><div class="task-letter-handle">D</div></td><td class="task-name-cell"><div class="task-name-wrap"><div class="task-name-text" contenteditable="false" spellcheck="false" data-fmt="rich" title="Click to edit task name"><div>Leadership approval on future state vision</div>
+<h3 data-section-id="1egp2x1" data-start="1048" data-end="1082"></h3></div><div class="domain-badge is-unassigned">+</div><button class="task-open-btn" title="Open task detail"><svg width="14" height="14" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2H2a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V7"></path><polyline points="8,1 11,1 11,4"></polyline><line x1="5.5" y1="6.5" x2="11" y2="1"></line></svg></button><button class="task-menu-btn" title="Task options">···</button><div class="task-grip-wrap"><svg width="8" height="14" viewBox="0 0 8 14" fill="none"><circle cx="2" cy="2" r="1.5" fill="currentColor"></circle><circle cx="6" cy="2" r="1.5" fill="currentColor"></circle><circle cx="2" cy="7" r="1.5" fill="currentColor"></circle><circle cx="6" cy="7" r="1.5" fill="currentColor"></circle><circle cx="2" cy="12" r="1.5" fill="currentColor"></circle><circle cx="6" cy="12" r="1.5" fill="currentColor"></circle></svg></div></div></td><td class="progress-col-cell"><div class="progress-circle-wrap" data-task-id="task-101">
+    <svg width="30" height="30" viewBox="0 0 30 30" class="prog-svg">
+      <circle cx="15" cy="15" r="10" fill="none" stroke="#E8ECF1" stroke-width="5.5"></circle>
+      <circle cx="15" cy="15" r="10" fill="none" stroke="#CBD5E1" stroke-width="5.5" stroke-dasharray="0.00 62.83" stroke-linecap="round" transform="rotate(-90 15 15)" class="prog-arc"></circle>
+    </svg>
+    <span class="prog-pct">0%</span></div></td><td class="task-team-cell"><input type="text" class="team-input" placeholder="Add owner…"></td><td colspan="6" class="gantt-cell" data-task-id="task-101"><div class="gantt-bg"><div class="gantt-band" style="flex: 1 1 0%; background: rgb(245, 249, 255);"></div><div class="gantt-band" style="flex: 4 1 0%; background: rgb(246, 249, 251);"></div><div class="gantt-band" style="flex: 1 1 0%; background: rgb(239, 246, 255);"></div></div><div class="gantt-grid" style="grid-template-columns: repeat(6, 1fr);"><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div></div><div class="task-bar" data-task-id="task-101" style="left: 83.3333%; width: 16.6667%; background: linear-gradient(rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.09) 100%), rgb(203, 213, 225);"><div class="resize-handle left" data-role="resize-left"></div>
+                   <div class="bar-label" style="color: rgba(0, 0, 0, 0.88);">New task — click…</div>
+                   <div class="bar-pct" style="color: rgba(0, 0, 0, 0.88);"></div>
+                   <div class="bar-progress-thumb" data-role="progress-thumb" style="left: 13px; --task-color: #F59E0B;"></div>
+                   <div class="resize-handle right" data-role="resize-right"></div></div></td></tr><tr class="task-row" data-task-id="task-102"><td class="handle-cell"><div class="task-letter-handle">E</div></td><td class="task-name-cell"><div class="task-name-wrap"><div class="task-name-text" contenteditable="false" spellcheck="false" data-fmt="rich" title="Click to edit task name">Final design package/s ready for engineering</div><div class="domain-badge is-unassigned">+</div><button class="task-open-btn" title="Open task detail"><svg width="14" height="14" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2H2a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V7"></path><polyline points="8,1 11,1 11,4"></polyline><line x1="5.5" y1="6.5" x2="11" y2="1"></line></svg></button><button class="task-menu-btn" title="Task options">···</button><div class="task-grip-wrap"><svg width="8" height="14" viewBox="0 0 8 14" fill="none"><circle cx="2" cy="2" r="1.5" fill="currentColor"></circle><circle cx="6" cy="2" r="1.5" fill="currentColor"></circle><circle cx="2" cy="7" r="1.5" fill="currentColor"></circle><circle cx="6" cy="7" r="1.5" fill="currentColor"></circle><circle cx="2" cy="12" r="1.5" fill="currentColor"></circle><circle cx="6" cy="12" r="1.5" fill="currentColor"></circle></svg></div></div></td><td class="progress-col-cell"><div class="progress-circle-wrap" data-task-id="task-102">
+    <svg width="30" height="30" viewBox="0 0 30 30" class="prog-svg">
+      <circle cx="15" cy="15" r="10" fill="none" stroke="#E8ECF1" stroke-width="5.5"></circle>
+      <circle cx="15" cy="15" r="10" fill="none" stroke="#CBD5E1" stroke-width="5.5" stroke-dasharray="0.00 62.83" stroke-linecap="round" transform="rotate(-90 15 15)" class="prog-arc"></circle>
+    </svg>
+    <span class="prog-pct">0%</span></div></td><td class="task-team-cell"><input type="text" class="team-input" placeholder="Add owner…"></td><td colspan="6" class="gantt-cell" data-task-id="task-102"><div class="gantt-bg"><div class="gantt-band" style="flex: 1 1 0%; background: rgb(245, 249, 255);"></div><div class="gantt-band" style="flex: 4 1 0%; background: rgb(246, 249, 251);"></div><div class="gantt-band" style="flex: 1 1 0%; background: rgb(239, 246, 255);"></div></div><div class="gantt-grid" style="grid-template-columns: repeat(6, 1fr);"><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div></div><div class="task-bar" data-task-id="task-102" style="left: 83.3333%; width: 16.6667%; background: linear-gradient(rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.09) 100%), rgb(203, 213, 225);"><div class="resize-handle left" data-role="resize-left"></div>
+                   <div class="bar-label" style="color: rgba(0, 0, 0, 0.88);">Final design package/s ready…</div>
+                   <div class="bar-pct" style="color: rgba(0, 0, 0, 0.88);"></div>
+                   <div class="bar-progress-thumb" data-role="progress-thumb" style="left: 13px; --task-color: #F59E0B;"></div>
                    <div class="resize-handle right" data-role="resize-right"></div></div></td></tr></tbody></table>
     <!-- Now needle + elapsed overlay — positioned absolutely inside gantt-wrap -->
-    <div id="now-overlay" style="display: none; left: 845.977px; width: 0px;"></div>
-    <div id="now-needle" style="display: none; left: 845.977px;">
+    <div id="now-overlay" style="display: none; left: 855.055px; width: 0px;"></div>
+    <div id="now-needle" style="display: none; left: 855.055px;">
       <!-- Vertical oval — drag handle, bottom merges into the line -->
       <div id="now-badge" title="Drag to reposition · click Now to hide"></div>
     </div>
@@ -1380,7 +1399,7 @@ body.now-dragging, body.now-dragging * { cursor: grabbing !important; user-selec
       </svg>
       Drag ⠿ to reprioritise · Drag bars to reschedule · Click any text to edit · Drag column edges to resize · Click Wk 1 to set a start date
     </div>
-    <div class="last-edited" id="last-edited">Renamed to "Ensure new designs use standar" · 03:17 PM</div>
+    <div class="last-edited" id="last-edited">Renamed to "Final design package/s ready f" · 03:28 PM</div>
   </div>
 </div>
 
@@ -1765,6 +1784,26 @@ const INITIATIVES = [
         "_activated": false,
         "progress": 0,
         "label": "C"
+      },
+      {
+        "id": "task-101",
+        "name": "Leadership approval on future state vision",
+        "start": 6,
+        "end": 6,
+        "team": "",
+        "_activated": false,
+        "progress": 0,
+        "label": "D"
+      },
+      {
+        "id": "task-102",
+        "name": "Final design package/s ready for engineering",
+        "start": 6,
+        "end": 6,
+        "team": "",
+        "_activated": false,
+        "progress": 0,
+        "label": "E"
       }
     ]
   }
