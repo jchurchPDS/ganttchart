@@ -934,13 +934,13 @@ body.now-dragging, body.now-dragging * { cursor: grabbing !important; user-selec
 .task-letter-badge:focus{color:#334155;background:#F1F5F9;border-color:#CBD5E1}
 .card-header-sub{display:none!important}
 .card-header{padding:7px 24px!important}
-#now-toggle-btn.today-radio-btn{display:inline-flex!important;align-items:center;gap:5px;background:none;border:1px solid #E2E8F0;cursor:pointer;padding:4px 10px 4px 8px;border-radius:20px;transition:all .15s;box-shadow:none}
-#now-toggle-btn.today-radio-btn:hover{border-color:#93C5FD}
-#now-toggle-btn.today-radio-btn.is-active{border-color:#3B82F6;background:#EFF6FF}
-.today-radio-circle{width:12px;height:12px;border-radius:50%;border:2px solid #94A3B8;background:white;flex-shrink:0;box-sizing:border-box;transition:all .15s;display:block}
-#now-toggle-btn.today-radio-btn.is-active .today-radio-circle{border-color:#3B82F6;background:#3B82F6;box-shadow:inset 0 0 0 2.5px white}
-.today-radio-lbl{font-size:11px;color:#64748B;font-weight:600;letter-spacing:.01em;line-height:1}
-#now-toggle-btn.today-radio-btn.is-active .today-radio-lbl{color:#1D4ED8}
+#now-toggle-btn.today-toggle{display:inline-flex!important;align-items:center;gap:7px;background:none;border:none;cursor:pointer;padding:4px 0;box-shadow:none;outline:none}
+.today-toggle-track{width:32px;height:18px;border-radius:9px;background:#CBD5E1;position:relative;transition:background .2s;flex-shrink:0;display:block}
+#now-toggle-btn.today-toggle.is-active .today-toggle-track{background:#3B82F6}
+.today-toggle-thumb{position:absolute;top:2px;left:2px;width:14px;height:14px;border-radius:50%;background:white;box-shadow:0 1px 3px rgba(0,0,0,.25);transition:transform .2s;display:block}
+#now-toggle-btn.today-toggle.is-active .today-toggle-thumb{transform:translateX(14px)}
+.today-toggle-lbl{font-size:12px;color:#64748B;font-weight:500}
+#now-toggle-btn.today-toggle.is-active .today-toggle-lbl{color:#1D4ED8;font-weight:600}
 .now-toggle-thumb{display:none!important}</style></head>
 <body class="">
 
@@ -1095,7 +1095,7 @@ body.now-dragging, body.now-dragging * { cursor: grabbing !important; user-selec
       <p contenteditable="true" spellcheck="false" data-fmt="rich" class="card-header-sub">3 Critical Initiatives + 1 Foundation Track</p>
     </div>
     <div style="display:flex;align-items:center;gap:10px;">
-      <button class="today-radio-btn is-active" id="now-toggle-btn" title="Jump to today"><span class="today-radio-circle"></span><span class="today-radio-lbl now-toggle-lbl">Today</span></button>
+      <button class="today-toggle" id="now-toggle-btn" title="Jump to today"><span class="today-toggle-track"><span class="today-toggle-thumb"></span></span><span class="today-toggle-lbl now-toggle-lbl">Today</span></button>
       <div class="wk-ctrl">
         <button class="wk-ctrl-btn" id="wk-minus">−</button>
         <input class="wk-ctrl-input" type="number" id="wk-count-input" value="12" min="4" max="52">
@@ -4131,196 +4131,128 @@ async function publishToGitHub(token) {
     if (sb) { sb.classList.remove('is-open'); document.body.classList.remove('sb-open'); }
     return origBPH();
   };
-})();</script><div id="claude-agent-glow-border" style="position: fixed; inset: 0px; pointer-events: none; z-index: 2147483646; opacity: 1; transition: opacity 0.3s ease-in-out; animation: 2s ease-in-out 0s infinite normal none running claude-pulse; box-shadow: rgba(217, 119, 87, 0.5) 0px 0px 10px inset, rgba(217, 119, 87, 0.3) 0px 0px 20px inset, rgba(217, 119, 87, 0.1) 0px 0px 30px inset;"></div><div id="claude-agent-glow-border" style="position: fixed; inset: 0px; pointer-events: none; z-index: 2147483646; opacity: 1; transition: opacity 0.3s ease-in-out; animation: 2s ease-in-out 0s infinite normal none running claude-pulse; box-shadow: rgba(217, 119, 87, 0.5) 0px 0px 10px inset, rgba(217, 119, 87, 0.3) 0px 0px 20px inset, rgba(217, 119, 87, 0.1) 0px 0px 30px inset;"></div><div id="claude-agent-glow-border" style="position: fixed; inset: 0px; pointer-events: none; z-index: 2147483646; opacity: 1; transition: opacity 0.3s ease-in-out; animation: 2s ease-in-out 0s infinite normal none running claude-pulse; box-shadow: rgba(217, 119, 87, 0.5) 0px 0px 10px inset, rgba(217, 119, 87, 0.3) 0px 0px 20px inset, rgba(217, 119, 87, 0.1) 0px 0px 30px inset;"></div><script id="four-tweaks-fix">(function fourTweaksFixV2() {
+})();</script><div id="claude-agent-glow-border" style="position: fixed; inset: 0px; pointer-events: none; z-index: 2147483646; opacity: 1; transition: opacity 0.3s ease-in-out; animation: 2s ease-in-out 0s infinite normal none running claude-pulse; box-shadow: rgba(217, 119, 87, 0.5) 0px 0px 10px inset, rgba(217, 119, 87, 0.3) 0px 0px 20px inset, rgba(217, 119, 87, 0.1) 0px 0px 30px inset;"></div><div id="claude-agent-glow-border" style="position: fixed; inset: 0px; pointer-events: none; z-index: 2147483646; opacity: 1; transition: opacity 0.3s ease-in-out; animation: 2s ease-in-out 0s infinite normal none running claude-pulse; box-shadow: rgba(217, 119, 87, 0.5) 0px 0px 10px inset, rgba(217, 119, 87, 0.3) 0px 0px 20px inset, rgba(217, 119, 87, 0.1) 0px 0px 30px inset;"></div><div id="claude-agent-glow-border" style="position: fixed; inset: 0px; pointer-events: none; z-index: 2147483646; opacity: 1; transition: opacity 0.3s ease-in-out; animation: 2s ease-in-out 0s infinite normal none running claude-pulse; box-shadow: rgba(217, 119, 87, 0.5) 0px 0px 10px inset, rgba(217, 119, 87, 0.3) 0px 0px 20px inset, rgba(217, 119, 87, 0.1) 0px 0px 30px inset;"></div><script id="four-tweaks-fix">(function fourTweaksFixV3() {
 
-  // ── HELPERS ─────────────────────────────────────────────────────────────────
+  // ── HELPER: label badge ────────────────────────────────────────────────────
   function makeLabelBadge(task, letterChar) {
-    var lblDiv = document.createElement('div');
-    lblDiv.className = 'task-letter-badge';
-    lblDiv.contentEditable = 'true';
-    lblDiv.spellcheck = false;
-    lblDiv.textContent = letterChar;
-    // Don't let clicks bubble into task-name edit mode
-    lblDiv.addEventListener('mousedown', function(e) { e.stopPropagation(); });
-    lblDiv.addEventListener('click', function(e) { e.stopPropagation(); });
-    lblDiv.addEventListener('input', function() {
-      var v = lblDiv.textContent.replace(/[\r\n]/g, '').slice(0, 2);
-      if (lblDiv.textContent !== v) {
-        lblDiv.textContent = v;
-        var sel = window.getSelection();
-        var range = document.createRange();
-        range.selectNodeContents(lblDiv);
-        range.collapse(false);
-        sel.removeAllRanges();
-        sel.addRange(range);
+    var d = document.createElement('div');
+    d.className = 'task-letter-badge';
+    d.contentEditable = 'true'; d.spellcheck = false;
+    d.textContent = letterChar;
+    d.addEventListener('mousedown', function(e){ e.stopPropagation(); });
+    d.addEventListener('click',     function(e){ e.stopPropagation(); });
+    d.addEventListener('input', function() {
+      var v = d.textContent.replace(/[\r\n]/g,'').slice(0,2);
+      if (d.textContent !== v) {
+        d.textContent = v;
+        var sel = window.getSelection(), r = document.createRange();
+        r.selectNodeContents(d); r.collapse(false);
+        sel.removeAllRanges(); sel.addRange(r);
       }
       task.label = v;
       if (typeof stampEdit === 'function') stampEdit();
     });
-    lblDiv.addEventListener('keydown', function(e) {
-      if (e.key === 'Enter') { e.preventDefault(); lblDiv.blur(); return; }
-      var cur = lblDiv.textContent.replace(/[\r\n]/g, '');
+    d.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter') { e.preventDefault(); d.blur(); return; }
+      var cur = d.textContent.replace(/[\r\n]/g,'');
       var ok = ['Backspace','Delete','ArrowLeft','ArrowRight','ArrowUp','ArrowDown','Tab'];
-      if (ok.indexOf(e.key) === -1 && !e.ctrlKey && !e.metaKey && cur.length >= 2) {
-        e.preventDefault();
-      }
+      if (ok.indexOf(e.key)===-1 && !e.ctrlKey && !e.metaKey && cur.length>=2) e.preventDefault();
     });
-    return lblDiv;
+    return d;
   }
 
   function patchExistingRows() {
-    // Remove any old letter badges first (in case of re-run)
-    document.querySelectorAll('.task-name-wrap .task-letter-badge').forEach(function(el){el.remove();});
-    document.querySelectorAll('.handle-cell .task-letter-badge').forEach(function(el){el.remove();});
-    document.querySelectorAll('.task-num').forEach(function(el){el.remove();});
-
+    document.querySelectorAll('.task-name-wrap .task-letter-badge,.handle-cell .task-letter-badge,.task-num').forEach(function(el){el.remove();});
     document.querySelectorAll('tbody.init-group').forEach(function(tbody) {
       var initId = tbody.dataset.initId;
       var init = (initId && typeof INITIATIVES !== 'undefined')
-        ? INITIATIVES.find(function(i) { return String(i.id) === String(initId); })
-        : null;
-      tbody.querySelectorAll('tr.task-row').forEach(function(tr, idx) {
+        ? INITIATIVES.find(function(i){return String(i.id)===String(initId);}) : null;
+      tbody.querySelectorAll('tr.task-row').forEach(function(tr,idx) {
         var taskId = tr.dataset.taskId;
-        var task = (init && init.tasks)
-          ? init.tasks.find(function(t) { return String(t.id) === String(taskId); })
-          : null;
+        var task = (init && init.tasks) ? init.tasks.find(function(t){return String(t.id)===String(taskId);}) : null;
         if (!task) return;
-        var wrap = tr.querySelector('.task-name-wrap');
-        if (!wrap) return;
-        if (!task.label) task.label = String.fromCharCode(65 + idx);
+        var wrap = tr.querySelector('.task-name-wrap'); if (!wrap) return;
+        if (!task.label) task.label = String.fromCharCode(65+idx);
         wrap.appendChild(makeLabelBadge(task, task.label));
       });
     });
   }
 
-  // ── 1. CSS ───────────────────────────────────────────────────────────────────
-  // Remove old CSS first
-  var oldCss = document.getElementById('four-tweaks-css');
-  if (oldCss) oldCss.remove();
-
-  var css = document.createElement('style');
-  css.id = 'four-tweaks-css';
+  // ── 1. CSS ─────────────────────────────────────────────────────────────────
+  var old = document.getElementById('four-tweaks-css'); if (old) old.remove();
+  var css = document.createElement('style'); css.id = 'four-tweaks-css';
   css.textContent = [
-    /* hide old task numbers */
     '.task-num{display:none!important}',
-    /* task letter — absolute in task-name-wrap (same slot as old .task-num) */
     '.task-name-wrap{position:relative}',
     '.task-letter-badge{position:absolute;left:0;width:26px;text-align:center;top:50%;transform:translateY(-50%);font-size:10px;font-weight:700;color:#94A3B8;outline:none;line-height:1;padding:2px 3px;border-radius:3px;border:1px solid transparent;cursor:text;z-index:2;transition:border-color .15s,background .15s,color .15s;white-space:nowrap;overflow:hidden}',
     '.task-letter-badge:hover{color:#64748B}',
     '.task-letter-badge:focus{color:#334155;background:#F1F5F9;border-color:#CBD5E1}',
-    /* card header */
     '.card-header-sub{display:none!important}',
     '.card-header{padding:7px 24px!important}',
-    /* today radio */
-    '#now-toggle-btn.today-radio-btn{display:inline-flex!important;align-items:center;gap:5px;background:none;border:1px solid #E2E8F0;cursor:pointer;padding:4px 10px 4px 8px;border-radius:20px;transition:all .15s;box-shadow:none}',
-    '#now-toggle-btn.today-radio-btn:hover{border-color:#93C5FD}',
-    '#now-toggle-btn.today-radio-btn.is-active{border-color:#3B82F6;background:#EFF6FF}',
-    '.today-radio-circle{width:12px;height:12px;border-radius:50%;border:2px solid #94A3B8;background:white;flex-shrink:0;box-sizing:border-box;transition:all .15s;display:block}',
-    '#now-toggle-btn.today-radio-btn.is-active .today-radio-circle{border-color:#3B82F6;background:#3B82F6;box-shadow:inset 0 0 0 2.5px white}',
-    '.today-radio-lbl{font-size:11px;color:#64748B;font-weight:600;letter-spacing:.01em;line-height:1}',
-    '#now-toggle-btn.today-radio-btn.is-active .today-radio-lbl{color:#1D4ED8}',
+    /* Toggle switch */
+    '#now-toggle-btn.today-toggle{display:inline-flex!important;align-items:center;gap:7px;background:none;border:none;cursor:pointer;padding:4px 0;box-shadow:none;outline:none}',
+    '.today-toggle-track{width:32px;height:18px;border-radius:9px;background:#CBD5E1;position:relative;transition:background .2s;flex-shrink:0;display:block}',
+    '#now-toggle-btn.today-toggle.is-active .today-toggle-track{background:#3B82F6}',
+    '.today-toggle-thumb{position:absolute;top:2px;left:2px;width:14px;height:14px;border-radius:50%;background:white;box-shadow:0 1px 3px rgba(0,0,0,.25);transition:transform .2s;display:block}',
+    '#now-toggle-btn.today-toggle.is-active .today-toggle-thumb{transform:translateX(14px)}',
+    '.today-toggle-lbl{font-size:12px;color:#64748B;font-weight:500}',
+    '#now-toggle-btn.today-toggle.is-active .today-toggle-lbl{color:#1D4ED8;font-weight:600}',
     '.now-toggle-thumb{display:none!important}'
   ].join('\n');
   document.head.appendChild(css);
 
-  // ── 2. REMOVE BROKEN BAR-SNAP LISTENER (from previous script version) ────────
-  // The old _prevMM reference from the v1 script is still in window.onBarMove.
-  // Remove it so only the original dynamic onBarMove fires during drag.
-  if (window._ftBarSnapFn) {
-    document.removeEventListener('mousemove', window._ftBarSnapFn);
-    window._ftBarSnapFn = null;
-  }
-  // Also try removing current window.onBarMove in case it's our added one
-  // (The original onBarMove is a function declaration — we can't reassign it back,
-  //  but we CAN remove our extra permanent listener)
-  if (window._ftBarSnap) {
-    // Remove our permanent listener — window.onBarMove is our injected fn
-    document.removeEventListener('mousemove', window.onBarMove);
-    window._ftBarSnap = false;
-    console.log('[v2] removed extra bar-snap mousemove listener');
-  }
+  // ── 2. TODAY TOGGLE — keep original click handler (accesses let nowWeek) ───
+  if (!window._ftV3Today) {
+    window._ftV3Today = true;
 
-  // ── 3. CARD HEADER CLEANUP ───────────────────────────────────────────────────
-  document.querySelectorAll('.card-header p').forEach(function(el) {
-    el.classList.add('card-header-sub');
-  });
+    // Restyle WITHOUT cloning — original closure-based click handler stays intact
+    var btn = document.getElementById('now-toggle-btn');
+    if (btn) {
+      btn.className = 'today-toggle';
+      btn.innerHTML = '<span class="today-toggle-track"><span class="today-toggle-thumb"></span></span>'
+                    + '<span class="today-toggle-lbl now-toggle-lbl">Today</span>';
+      btn.title = 'Jump to today';
+    }
 
-  // ── 4. TODAY RADIO BUTTON ────────────────────────────────────────────────────
-  if (!window._ftToday) {
-    window._ftToday = true;
-
-    window.autoPositionNowDay = function() {
-      if (typeof startDate === 'undefined' || !startDate) return;
-      var D = 24*60*60*1000, W = 7*D;
-      var now = new Date();
-      var dow = now.getDay();
-      if (dow===0) now = new Date(now.getTime()+D);
-      else if (dow===6) now = new Date(now.getTime()+2*D);
-      var sDow = now.getDay();
-      var dayOff = (sDow-1)*0.2;
-      var wk = Math.floor((now.getTime()-startDate.getTime())/W)+1;
-      var frac = wk + dayOff;
-      var tw = typeof TW!=='undefined' ? TW : 12;
-      if (frac>=0.8 && frac<=tw+1) {
-        window.nowWeek = frac;
-        if (typeof updateNowNeedle==='function') updateNowNeedle();
-      }
-    };
-
+    // Wrap updateNowNeedle to keep label "Today" (original sets it to 'Now'/'Off')
     var _origUNN = window.updateNowNeedle;
     if (typeof _origUNN === 'function') {
       window.updateNowNeedle = function() {
         _origUNN();
-        var btn = document.getElementById('now-toggle-btn');
-        if (btn) {
-          var lbl = btn.querySelector('.now-toggle-lbl,.today-radio-lbl');
-          if (lbl) lbl.textContent = 'Today';
-        }
+        var b = document.getElementById('now-toggle-btn');
+        if (b) { var l = b.querySelector('.now-toggle-lbl,.today-toggle-lbl'); if (l) l.textContent = 'Today'; }
       };
     }
 
-    var toggleBtn = document.getElementById('now-toggle-btn');
-    if (toggleBtn) {
-      toggleBtn.className = 'today-radio-btn';
-      toggleBtn.innerHTML = '<span class="today-radio-circle"></span><span class="today-radio-lbl now-toggle-lbl">Today</span>';
-      toggleBtn.title = 'Jump to today';
-      var newBtn = toggleBtn.cloneNode(true);
-      toggleBtn.parentNode.replaceChild(newBtn, toggleBtn);
-      newBtn.addEventListener('click', function() {
-        if (typeof nowWeek!=='undefined' && nowWeek!==null) {
-          window.nowWeek = null;
-          if (typeof updateNowNeedle==='function') updateNowNeedle();
-        } else {
-          window.autoPositionNowDay();
-        }
-      });
+    // Wrap autoPositionNow to add visual day-of-week offset
+    // (original runs in its own scope with access to let startDate + let nowWeek, so it works)
+    var _origAPN = window.autoPositionNow;
+    if (typeof _origAPN === 'function') {
+      window.autoPositionNow = function() {
+        _origAPN(); // sets let nowWeek, positions needle at week boundary
+        var now = new Date(), dow = now.getDay();
+        if (dow === 0 || dow === 6) return; // weekend: stays on Monday
+        var dayOff = (dow - 1) * 0.2; // Mon=0 Tue=0.2 Wed=0.4 Thu=0.6 Fri=0.8
+        if (dayOff === 0) return;
+        var needle = document.getElementById('now-needle');
+        if (!needle || needle.style.display === 'none') return;
+        var orig = getWkColOrigin();
+        needle.style.left = (parseFloat(needle.style.left || 0) + dayOff * orig.wkWidth) + 'px';
+      };
     }
   }
 
-  // ── 5. TASK LETTER LABELS (in task-name-wrap) ────────────────────────────────
-  if (!window._ftTaskLabels) {
-    window._ftTaskLabels = true;
+  // ── 3. CARD HEADER ─────────────────────────────────────────────────────────
+  document.querySelectorAll('.card-header p').forEach(function(el){el.classList.add('card-header-sub');});
+
+  // ── 4. TASK LETTERS in task-name-wrap ──────────────────────────────────────
+  if (!window._ftV3Labels) {
+    window._ftV3Labels = true;
     var _origBTR = window.buildTaskRow;
     if (typeof _origBTR === 'function') {
       window.buildTaskRow = function(task, init) {
         var tr = _origBTR(task, init);
-        var wrap = tr.querySelector('.task-name-wrap');
-        if (!wrap) return tr;
-        tr.querySelectorAll('.task-num').forEach(function(el){el.remove();});
-        var idx = (init&&init.tasks) ? init.tasks.indexOf(task) : 0;
-        if (!task.label) task.label = String.fromCharCode(65+Math.max(0,idx));
-        wrap.appendChild(makeLabelBadge(task, task.label));
-        return tr;
-      };
-    }
-  } else {
-    // Re-patch with updated makeLabelBadge pointing to task-name-wrap
-    var _origBTR2 = window.buildTaskRow;
-    if (typeof _origBTR2 === 'function') {
-      window.buildTaskRow = function(task, init) {
-        var tr = _origBTR2(task, init);
-        var wrap = tr.querySelector('.task-name-wrap');
-        if (!wrap) return tr;
+        var wrap = tr.querySelector('.task-name-wrap'); if (!wrap) return tr;
         tr.querySelectorAll('.task-num,.task-letter-badge').forEach(function(el){el.remove();});
         var idx = (init&&init.tasks) ? init.tasks.indexOf(task) : 0;
         if (!task.label) task.label = String.fromCharCode(65+Math.max(0,idx));
@@ -4330,8 +4262,87 @@ async function publishToGitHub(token) {
     }
   }
 
+  // ── 5. 0.5-WEEK BAR SNAPPING ───────────────────────────────────────────────
+  // Override window.onBarMove (function declaration → resolves via window in global scope)
+  // Use window._dragState to avoid needing 'let barDrag'
+  if (!window._ftV3BarSnap) {
+    window._ftV3BarSnap = true;
+
+    // Stash drag state on mousedown (capture, before onBarMouseDown)
+    document.addEventListener('mousedown', function(e) {
+      var bar = e.target.closest ? e.target.closest('.task-bar') : null;
+      if (!bar) { window._dragState = null; return; }
+      var role = e.target.dataset ? e.target.dataset.role : null;
+      var taskId = bar.dataset.taskId;
+      // Find task
+      var task = null;
+      if (typeof taskMap !== 'undefined' && taskMap && taskMap[taskId]) {
+        task = taskMap[taskId];
+      } else if (typeof INITIATIVES !== 'undefined') {
+        for (var i=0; i<INITIATIVES.length; i++) {
+          var t = INITIATIVES[i].tasks && INITIATIVES[i].tasks.find(function(t){return String(t.id)===String(taskId);});
+          if (t) { task = t; break; }
+        }
+      }
+      if (!task) { window._dragState = null; return; }
+      var gc = bar.parentElement;
+      var rect = gc ? gc.getBoundingClientRect() : null;
+      // Get tw from input
+      var twEl = document.getElementById('wk-count-input');
+      var tw = twEl ? (parseInt(twEl.value,10)||12) : 12;
+      var wPx = rect ? rect.width / tw : 88;
+      window._dragState = {
+        bar: bar, task: task, type: role||'move',
+        startX: e.clientX, initStart: task.start, initEnd: task.end,
+        wPx: wPx, tw: tw, isClick: true
+      };
+    }, true);
+
+    // Override onBarMove — uses window._dragState not let barDrag
+    window.onBarMove = function(e) {
+      var drag = window._dragState;
+      if (!drag) return;
+      if (drag.isClick && Math.abs(e.clientX - drag.startX) > 4) drag.isClick = false;
+      if (drag.isClick) return;
+      var type=drag.type, bar=drag.bar, startX=drag.startX;
+      var initStart=drag.initStart, initEnd=drag.initEnd, wPx=drag.wPx, tw=drag.tw;
+      var delta = (e.clientX - startX) / wPx;
+      var s = initStart, en = initEnd;
+      if (type==='move') {
+        var d = initEnd - initStart;
+        s = Math.round((initStart + delta) * 2) / 2;
+        s = Math.max(1, Math.min(tw - d, s));
+        en = s + d;
+      } else if (type==='resize-left') {
+        s = Math.round((initStart + delta) * 2) / 2;
+        s = Math.max(1, Math.min(en + 0.5, s));
+      } else if (type==='resize-right') {
+        en = Math.round((initEnd + delta) * 2) / 2;
+        en = Math.max(s - 0.5, Math.min(tw, en));
+      }
+      if (typeof positionBar === 'function') positionBar(bar, s, en);
+      if (typeof showBarTip === 'function') showBarTip(e, s, en);
+      drag.liveS = s; drag.liveE = en;
+    };
+
+    // Save on mouseup (deferred so onBarUp cleanup runs first)
+    document.addEventListener('mouseup', function() {
+      var drag = window._dragState;
+      window._dragState = null;
+      if (!drag || drag.isClick || drag.liveS === undefined) return;
+      setTimeout(function() {
+        drag.task.start = drag.liveS;
+        drag.task.end   = drag.liveE;
+        if (typeof positionBar === 'function') positionBar(drag.bar, drag.liveS, drag.liveE);
+        if (typeof stampEdit === 'function') {
+          var lbl = typeof getBarTipLabel === 'function' ? getBarTipLabel(drag.liveS, drag.liveE) : '';
+          stampEdit(lbl ? 'Moved to ' + lbl : 'Bar moved');
+        }
+      }, 0);
+    }, false);
+  }
+
   // Patch existing rows
   patchExistingRows();
-
-  console.log('[four-tweaks-fix-v2] installed');
+  console.log('[four-tweaks-fix-v3] installed');
 })();</script></body></html>
