@@ -916,7 +916,7 @@ body.now-dragging, body.now-dragging * { cursor: grabbing !important; user-selec
             inset 0 0 30px rgba(217, 119, 87, 0.1);
         }
       }
-    </style><style id="task-row-zebra">.init-group .task-row:nth-child(even) td { background-color: #EEF2F7 !important; }</style></head>
+    </style><style id="task-row-zebra">.init-group .task-row:nth-child(even) td { background-color: #F7F9FB !important; }</style></head>
 <body class="sb-open">
 
 <div id="fmt-toolbar" style="display: none; left: 216.426px; top: 499.883px;">
@@ -4018,15 +4018,17 @@ async function publishToGitHub(token) {
   if (!document.getElementById('task-row-zebra')) {
     var st = document.createElement('style');
     st.id = 'task-row-zebra';
-    st.textContent = '.init-group .task-row:nth-child(even) td { background-color: #EEF2F7 !important; }';
+    st.textContent = '.init-group .task-row:nth-child(even) td { background-color: #F7F9FB !important; }';
     document.head.appendChild(st);
   }
+  var iceIdx = PHASE_COLORS.findIndex(function(c){ return c.name === 'Ice'; });
+  if (iceIdx !== -1) PHASE_COLORS.splice(iceIdx, 4);
   if (!PHASE_COLORS.some(function(c){ return c.name === 'Ice'; })) {
     PHASE_COLORS.push(
-      { name: 'Ice',   accentColor: '#BFDBFE', textColor: '#1E40AF', bgColor: '#F5F9FF', bandColor: '#EBF3FF' },
-      { name: 'Sky',   accentColor: '#BAE6FD', textColor: '#075985', bgColor: '#F4F9FD', bandColor: '#E8F4FC' },
-      { name: 'Haze',  accentColor: '#C9D8E8', textColor: '#2D4A62', bgColor: '#F5F8FB', bandColor: '#EBF2F8' },
-      { name: 'Cloud', accentColor: '#D4DEE8', textColor: '#3D5166', bgColor: '#F6F9FC', bandColor: '#EDF2F7' }
+      { name: 'Ice',   accentColor: '#DFEDFF', textColor: '#1E40AF', bgColor: '#FAFCFF', bandColor: '#F5F9FF' },
+      { name: 'Sky',   accentColor: '#DDF3FE', textColor: '#075985', bgColor: '#FAFCFE', bandColor: '#F4FAFE' },
+      { name: 'Haze',  accentColor: '#E4ECF4', textColor: '#2D4A62', bgColor: '#FAFCFD', bandColor: '#F5F9FC' },
+      { name: 'Cloud', accentColor: '#EAEFF4', textColor: '#3D5166', bgColor: '#FBFCFE', bandColor: '#F6F9FB' }
     );
   }
 })();</script></body></html>
